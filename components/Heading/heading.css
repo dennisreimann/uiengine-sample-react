@@ -1,3 +1,44 @@
 .heading {
-  color: red;
+  font-family: var(--font-family-head);
+  color: var(--color-brown);
+}
+
+h1.heading {
+  font-size: var(--font-size-xl)
+}
+
+h2.heading {
+  font-size: var(--font-size-l)
+}
+
+h3.heading {
+  font-size: var(--font-size-l)
+}
+
+.deco {
+  position: relative;
+  font-family: var(--font-family-deco);
+  font-weight: 400;
+  text-align: center;
+  display: table;
+  text-transform: uppercase;
+}
+
+.deco:before,
+.deco:after {
+  display: table-cell;
+  content: '';
+  border-top: 1px solid var(--color-gray-30);
+  width: 50%;
+  height: 1px;
+  position: relative;
+  top: .8em;
+}
+
+.deco span {
+  margin-top: -.5em;
+  padding: 0 .75em;
+  letter-spacing: .1em;
+  white-space: nowrap;
+  line-height: .8em;
 }

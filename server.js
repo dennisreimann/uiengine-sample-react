@@ -16,7 +16,7 @@ app.prepare()
       res.sendFile(filePath)
     })
 
-    server.get('/recipe/:id', (req, res) => {
+    server.get('/recipes/:id', (req, res) => {
       const actualPage = '/recipe'
       const queryParams = { id: req.params.id }
       app.render(req, res, actualPage, queryParams)

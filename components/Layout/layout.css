@@ -1,22 +1,63 @@
-.layout {
-  font-size: 20px;
-  font-family: "Arial";
+:root {
+  --color-white: #FFF;
+  --color-gray-10: #dedcdc;
+  --color-gray-20: #ebebeb;
+  --color-gray-30: #DDD;
+  --color-orange: #ff9160;
+  --color-orange-transparent: rgba(255,145,96,.35);
+  --color-brown: #583f48;
+  --color-brown-transparent: rgba(88,63,72,.8);
+
+  --font-family-base: Helvetica,Arial,Tahoma,Verdana,sans-serif;
+  --font-family-head: Head, var(--font-family-base);
+  --font-family-deco: Deco, var(--font-family-base);
+
+  --font-size-xs: 9px;
+  --font-size-s: 11px;
+  --font-size-m: 14px;
+  --font-size-l: 21px;
+  --font-size-xl: 28px;
+
+  --space-xs: .25rem;
+  --space-s: .5rem;
+  --space-m: .75rem;
+  --space-l: 1.25rem;
+  --space-xl: 1.75rem;
+
+  --wrap-width: 960px;
 }
 
-ul {
+@font-face {
+  font-family: Head;
+  src: url(/static/fonts/Head.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Deco;
+  src: url(/static/fonts/Deco.woff2) format("woff2");
+}
+
+* {
+  margin: 0;
   padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-li {
-  list-style: none;
-  margin: 5px 0;
+html {
+  min-height: 100%;
+  height: auto;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-m);
+  line-height: 1.5;
+  background: var(--color-gray-10);
 }
 
-a {
-  text-decoration: none;
-  color: blue;
+.layout {
 }
 
-a:hover {
-  opacity: 0.6;
+.main {
+  margin: var(--space-l) var(--space-m);
+  padding: var(--space-m);
+  background: var(--color-white);
 }

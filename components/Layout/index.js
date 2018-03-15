@@ -1,10 +1,16 @@
 import Header from '../Header'
 import Heading from '../Heading'
+import Socialbar from '../Socialbar'
+import Footer from '../Footer'
 import css from './layout.css'
 
 export default props => (
   <div className={css.layout}>
     <Header />
-    {props.children}
+    <main className={css.main}>
+      {props.children}
+    </main>
+    <Socialbar />
+    <Footer />
   </div>
 )

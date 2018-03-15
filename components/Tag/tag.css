@@ -1,0 +1,42 @@
+.tag {
+  position: relative;
+  line-height: 1em;
+  color: var(--color-white);
+  background-color: var(--color-brown);
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: .5em;
+  padding: .5em .9em;
+  transition: background-color 125ms linear;
+}
+
+.tag:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: -.5em;
+  margin-top: -1em;
+  border-style: solid;
+  border-width: 1em 0 1em .5em;
+  border-color: transparent transparent transparent var(--color-brown);
+  transition: border-color 125ms linear;
+}
+
+.tag:after {
+  position: absolute;
+  content: '';
+  top: calc(50% - .15em);
+  right: 0;
+  background: var(--color-white);
+  border-radius: 50%;
+  width: .3em;
+  height: .3em;
+}
+
+.tag:hover {
+  background-color: var(--color-orange);
+}
+
+.tag:hover:before {
+  border-color: transparent transparent transparent var(--color-orange);
+}

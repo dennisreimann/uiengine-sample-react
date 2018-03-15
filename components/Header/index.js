@@ -1,13 +1,15 @@
 import Link from 'next/link'
+import Navbar from '../Navbar'
 import css from './header.css'
 
-export default () => (
-  <div>
+export default props => (
+  <header className={css.header}>
+    <Navbar className={css.navbar} />
     <Link href="/">
-      <a className={css.link}>Home</a>
+      <a className={css.link}>
+        <div className={css.title}>Tasty BBQ</div>
+        <div className={css.subtitle}>homemade • best in town • yummy</div>
+      </a>
     </Link>
-    <Link href="/about">
-      <a className={css.link}>About</a>
-    </Link>
-  </div>
+  </header>
 )

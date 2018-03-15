@@ -8,11 +8,27 @@
     "title": "Nacho Salad"
   },
   {
+    "id": "gyros",
+    "title": "Gyros"
+  },
+  {
     "id": "burnt-ends",
     "title": "Brisket Burnt Ends"
   },
   {
+    "id": "porterhouse-steak",
+    "title": "Porterhouse Steak"
+  },
+  {
     "id": "beer-can-chicken",
     "title": "Beer Can Chicken"
+  },
+  {
+    "id": "onion-moinkballs",
+    "title": "Onion Moinkballs"
+  },
+  {
+    "id": "bacon-wrapped-chicken-breasts",
+    "title": "Bacon-wrapped Chicken Breasts"
   }
 ]

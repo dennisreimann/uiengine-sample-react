@@ -10,7 +10,7 @@ const Recipe = ({ recipe }) => (
   </Layout>
 )
 
-Recipe.getInitialProps = async function (context) {
+Recipe.getInitialProps = async (context) => {
   const { id } = context.query
   const recipe = await ApiService.load(`/recipes/${id}`)
 

@@ -1,0 +1,31 @@
+.socialbar {
+  height: 100px;
+  background-image: url(/static/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  flex: 0 0 100px;
+  height: 100px;
+  padding: 30px;
+  transition: background-color 125ms linear;
+}
+
+.link:hover {
+  background-color: var(--color-orange-transparent);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
