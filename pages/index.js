@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import Heading from '../components/Heading'
-import RecipeListItem from '../components/RecipeListItem'
+import RecipeItem from '../components/RecipeItem'
 import ApiService from '../lib/api_service'
 import Link from 'next/link'
 
@@ -14,7 +14,7 @@ const Index = ({ recipes }) => (
       drumstick alcatra shoulder strip steak. Short ribs meatloaf biltong salami.
     </p>
     <section>
-      {recipes.map(recipe => (<RecipeListItem recipe={recipe} key={recipe.id} />))}
+      {recipes.map(recipe => (<RecipeItem recipe={recipe} key={recipe.id} teaser={true} />))}
     </section>
   </Layout>
 )

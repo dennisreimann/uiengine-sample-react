@@ -1,15 +1,26 @@
-import { classNames } from '../../lib/util'
-import css from './heading.css'
+import PropTypes from 'prop-types'
+import classNames from 'classnames/bind'
+import css from './Heading.css'
+
+const cx = classNames.bind(css)
 
 const createTag = (level = 1) => `h${level}`
 
-export default props => {
+const Heading = props => {
   const Tag = createTag(props.level)
-  const decoClass = props.deco ? css.deco : null
+  const className = cx(['heading', { deco: props.deco }])
 
   return (
-    <Tag className={classNames([css.heading, decoClass])}>
+    <Tag className={className}>
       <span>{props.title}</span>
     </Tag>
   )
 }
+
+Heading.propTypes = {
+  title: PropTypes.string.isRequired,
+  level: PropTypes.number,
+  deco: PropTypes.bool
+}
+
+export default Heading

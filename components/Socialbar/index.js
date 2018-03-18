@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types'
 import Icon from '../Icon'
-import css from './socialbar.css'
+import css from './Socialbar.css'
 
 const SocialLink = ({ title }) => (
   <a href="#" className={css.link}>
@@ -7,7 +8,11 @@ const SocialLink = ({ title }) => (
   </a>
 )
 
-export default props => (
+SocialLink.propTypes = {
+  title: PropTypes.string.isRequired
+}
+
+const SocialBar = props => (
   <div className={css.socialbar}>
     <div className={css.wrap}>
       <SocialLink title="Instagram" />
@@ -18,3 +23,5 @@ export default props => (
     </div>
   </div>
 )
+
+export default SocialBar

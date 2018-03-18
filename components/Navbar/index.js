@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types'
+import classNames from 'classnames/bind'
 import { withRouter } from 'next/router'
-import { classNames } from '../../lib/util'
 import Link from 'next/link'
-import css from './navbar.css'
+import css from './Navbar.css'
 
 const routes = {
   home: '/',
@@ -9,18 +10,25 @@ const routes = {
   about: '/about'
 }
 
+const cx = classNames.bind(css)
+
 const NavLink = withRouter(({ router, route, title }) => {
-  const activeClass = router.pathname === route ? css.linkActive : null
-  const classes = classNames([css.link, activeClass])
+  const isActive = router.pathname === route
+  const className = cx(['link', { linkActive: isActive }])
 
   return (
     <Link href={route}>
-      <a className={classes}>{title}</a>
+      <a className={className}>{title}</a>
     </Link>
   )
 })
 
-export default props => (
+NavLink.propTypes = {
+  route: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+}
+
+const Navbar = props => (
   <nav className={classNames([css.navbar, props.className])}>
     <div className={css.wrap}>
       <NavLink route={routes.home} title="Home" />
@@ -29,3 +37,9 @@ export default props => (
     </div>
   </nav>
 )
+
+Navbar.propTypes = {
+  className: PropTypes.string
+}
+
+export default Navbar

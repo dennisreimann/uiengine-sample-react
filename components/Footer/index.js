@@ -1,10 +1,10 @@
 import Link from 'next/link'
+import classNames from 'classnames'
 import Panel from '../Panel'
 import Tag from '../Tag'
-import { classNames } from '../../lib/util'
-import css from './footer.css'
+import css from './Footer.css'
 
-export default props => (
+const Footer = props => (
   <footer className={css.footer}>
     <div className={classNames([css.panels, css.wrap])}>
       <Panel title="Tags" className={css.panel}>
@@ -37,3 +37,5 @@ export default props => (
     <p className={css.copyright}>&copy; Tasty BBQ by UIengine 2018</p>
   </footer>
 )
+
+export default Footer

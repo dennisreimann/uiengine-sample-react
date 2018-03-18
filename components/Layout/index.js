@@ -2,9 +2,9 @@ import Header from '../Header'
 import Heading from '../Heading'
 import Socialbar from '../Socialbar'
 import Footer from '../Footer'
-import css from './layout.css'
+import css from './Layout.css'
 
-export default props => (
+const Layout = props => (
   <div className={css.layout}>
     <Header />
     <main className={css.main}>
@@ -14,3 +14,5 @@ export default props => (
     <Footer />
   </div>
 )
+
+export default Layout

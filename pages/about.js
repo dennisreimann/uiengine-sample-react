@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import Heading from '../components/Heading'
 
-export default () => (
+const About = () => (
   <Layout>
     <Heading title="About Tasty BBQ" />
     <p>
@@ -48,3 +48,5 @@ export default () => (
     </p>
   </Layout>
 )
+
+export default About

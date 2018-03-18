@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Navbar from '../Navbar'
-import css from './header.css'
+import css from './Header.css'
 
-export default props => (
+const Header = props => (
   <header className={css.header}>
     <Navbar className={css.navbar} />
     <Link href="/">
@@ -13,3 +13,5 @@ export default props => (
     </Link>
   </header>
 )
+
+export default Header
