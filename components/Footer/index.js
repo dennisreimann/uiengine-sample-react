@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Panel from '../Panel'
 import Tag from '../Tag'
 import css from './Footer.css'
 
 const Footer = props => (
-  <footer className={css.footer}>
+  <footer className={classNames([css.footer, props.className])}>
     <div className={classNames([css.panels, css.wrap])}>
       <Panel title="Tags" className={css.panel}>
         <div className={css.tags}>
@@ -37,5 +38,9 @@ const Footer = props => (
     <p className={css.copyright}>&copy; Tasty BBQ by UIengine 2018</p>
   </footer>
 )
+
+Footer.propTypes = {
+  className: PropTypes.string
+}
 
 export default Footer

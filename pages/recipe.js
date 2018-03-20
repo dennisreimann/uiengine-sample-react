@@ -1,12 +1,14 @@
-import Layout from '../components/Layout'
+import Layout, { Main } from '../components/Layout'
 import Heading from '../components/Heading'
 import ApiService from '../lib/api_service'
 
 const Recipe = ({ recipe }) => (
   <Layout>
-    <Heading title={recipe.title} />
-    <p>{recipe.summary}</p>
-    <img src={recipe.mainImage} />
+    <Main>
+      <Heading title={recipe.title} />
+      <p>{recipe.summary}</p>
+      <img src={recipe.mainImage} />
+    </Main>
   </Layout>
 )
 

@@ -1,18 +1,30 @@
-.heading {
-  font-family: var(--font-family-head);
-  color: var(--color-brown);
-}
-
 h1.heading {
-  font-size: var(--font-size-xl)
+  font-size: var(--font-size-xl);
 }
 
 h2.heading {
-  font-size: var(--font-size-l)
+  font-size: var(--font-size-l);
 }
 
 h3.heading {
-  font-size: var(--font-size-l)
+  font-size: var(--font-size-l);
+}
+
+h4.heading {
+  font-size: var(--font-size-m);
+}
+
+h5.heading {
+  font-size: var(--font-size-m);
+}
+
+.heading {
+  color: var(--color-brown);
+  margin-bottom: var(--space-m);
+}
+
+.title {
+  font-family: var(--font-family-head);
 }
 
 .deco {
@@ -28,7 +40,7 @@ h3.heading {
 .deco:after {
   display: table-cell;
   content: '';
-  border-top: 1px solid var(--color-gray-30);
+  border-top: 1px solid var(--color-brown);
   width: 50%;
   height: 1px;
   position: relative;

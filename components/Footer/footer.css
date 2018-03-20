@@ -6,7 +6,13 @@
 .wrap {
   max-width: var(--wrap-width);
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-m);
+}
+
+@media screen and (min-width: 600px) {
+  .wrap {
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+  }
 }
 
 .panels {
@@ -14,23 +20,23 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .panel {
     flex: 1 1 100%;
   }
 
   .panel + .panel {
-    margin-top: var(--space-xl);
+    margin-top: var(--space-m);
   }
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .panel {
-    flex: 1 1;
+    flex: 1 1 40%;
   }
 
-  .panel + .panel {
-    margin-left: var(--space-xl);
+  .panel:nth-child(2n) {
+    margin-left: var(--space-l);
   }
 }
 

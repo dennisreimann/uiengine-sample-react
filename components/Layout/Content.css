@@ -1,0 +1,12 @@
+.content p,
+.content ul,
+.content ol {
+  margin-bottom: var(--space-l);
+}
+
+.content > :last-child,
+.content div > :last-child,
+.content section > :last-child,
+.content article > :last-child {
+  margin-bottom: 0;
+}

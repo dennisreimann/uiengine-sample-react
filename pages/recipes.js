@@ -1,14 +1,16 @@
-import Layout from '../components/Layout'
+import Layout, { Main } from '../components/Layout'
 import Heading from '../components/Heading'
 import RecipeItem from '../components/RecipeItem'
 import ApiService from '../lib/api_service'
 
 const Recipes = ({ recipes }) => (
   <Layout>
-    <Heading title="Recipes" />
-    <section>
-      {recipes.map(recipe => (<RecipeItem recipe={recipe} key={recipe.id} />))}
-    </section>
+    <Main>
+      <Heading title="Recipes" />
+      <section>
+        {recipes.map(recipe => (<RecipeItem recipe={recipe} key={recipe.id} />))}
+      </section>
+    </Main>
   </Layout>
 )
 

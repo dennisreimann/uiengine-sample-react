@@ -3,9 +3,22 @@
 }
 
 .wrap {
-  max-width: var(--wrap-width);;
+  max-width: var(--wrap-width);
   margin: 0 auto;
-  padding: 0 var(--space-m);
+}
+
+@media screen and (max-width: 599px) {
+  .wrap {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .wrap {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
 }
 
 .link {

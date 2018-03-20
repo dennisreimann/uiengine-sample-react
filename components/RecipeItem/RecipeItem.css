@@ -1,6 +1,57 @@
 .recipeItem {
+  display: inline-block;
 }
 
 .recipeItemAsTeaser {
-  border: 2px solid red;
+  position: relative;
+  flex: 1 1 30%;
+}
+
+.recipeItemAsTeaser .link:before {
+  position: absolute;
+  display: block;
+  content: '';
+  top: var(--space-m);
+  right: var(--space-m);
+  bottom: var(--space-m);
+  left: var(--space-m);
+  outline: var(--space-xxs) solid var(--color-white-transparent);
+  z-index: 2;
+  transition: all .15s linear;
+}
+
+.recipeItemAsTeaser .link:hover:before {
+  top: var(--space-l);
+  right: var(--space-l);
+  bottom: var(--space-l);
+  left: var(--space-l);
+  opacity: 0;
+}
+
+.recipeItemAsTeaser .heading {
+  position: absolute;
+  top: var(--space-xl);
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-bottom: var(--space-xl);
+  color: var(--color-white);
+  line-height: 2rem;
+
+  font-size: var(--font-size-xl);
+  font-family: var(--font-family-deco);
+
+  text-shadow: 2px 2px 2px var(--color-brown),
+               2px -2px 2px var(--color-brown),
+               -2px 2px 2px var(--color-brown),
+               -2px -2px 2px var(--color-brown);
+}
+
+.recipeItemAsTeaser .preview {
+  width: 100%;
+  display: block;
+}
+
+.recipeItemAsTeaser .abstract {
+  display: none;
 }

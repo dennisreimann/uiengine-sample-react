@@ -1,3 +1,4 @@
 .panel {
-
+  padding: var(--space-l);
+  background: var(--color-white);
 }

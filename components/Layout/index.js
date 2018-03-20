@@ -1,18 +1,6 @@
-import Header from '../Header'
-import Heading from '../Heading'
-import Socialbar from '../Socialbar'
-import Footer from '../Footer'
-import css from './Layout.css'
+export { default as Layout } from './Layout'
+export { default as Main } from './Main'
+export { default as Sidebar } from './Sidebar'
 
-const Layout = props => (
-  <div className={css.layout}>
-    <Header />
-    <main className={css.main}>
-      {props.children}
-    </main>
-    <Socialbar />
-    <Footer />
-  </div>
-)
-
+import Layout from './Layout'
 export default Layout

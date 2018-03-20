@@ -2,10 +2,11 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Heading from '../Heading'
 import css from './Panel.css'
+import { content as contentClass } from '../Layout/Content.css'
 
 const Panel = props => (
-  <div className={classNames([css.panel, props.className])}>
-    <Heading level={3} title={props.title} deco={true} />
+  <div className={classNames([css.panel, contentClass, props.className])}>
+    <Heading title={props.title} level={3} type='deco' />
     {props.children}
   </div>
 )

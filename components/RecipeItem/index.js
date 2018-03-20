@@ -13,12 +13,12 @@ const RecipeItem = props => {
   return (
     <div className={className}>
       <Link as={`/recipes/${recipe.id}`} href={`/recipes?id=${recipe.id}`}>
-        <a>
-          <Heading title={recipe.title} level={2} />
-          <br />
-          <img src={`/static/images/recipes/${recipe.id}/preview.jpg`} />
+        <a className={css.link}>
+          <Heading title={recipe.title} level={3} className={css.heading} />
+          <img src={`/static/images/recipes/${recipe.id}/preview.jpg`} className={css.preview} />
         </a>
       </Link>
+      <p className={css.abstract}>{recipe.abstract}</p>
     </div>
   )
 }

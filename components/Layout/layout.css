@@ -1,5 +1,6 @@
 :root {
   --color-white: #FFF;
+  --color-white-transparent: rgba(255,255,255,.35);
   --color-gray-10: #dedcdc;
   --color-gray-20: #ebebeb;
   --color-gray-30: #DDD;
@@ -18,13 +19,14 @@
   --font-size-l: 21px;
   --font-size-xl: 28px;
 
+  --space-xxs: .125rem;
   --space-xs: .25rem;
   --space-s: .5rem;
   --space-m: .75rem;
   --space-l: 1.25rem;
   --space-xl: 1.75rem;
 
-  --wrap-width: 960px;
+  --wrap-width: 1200px;
 }
 
 @font-face {
@@ -45,19 +47,88 @@
 }
 
 html {
-  min-height: 100%;
-  height: auto;
   font-family: var(--font-family-base);
   font-size: var(--font-size-m);
   line-height: 1.5;
   background: var(--color-gray-10);
 }
 
-.layout {
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--wrap-width);
+  margin: 0 auto;
 }
 
 .main {
-  margin: var(--space-l) var(--space-m);
-  padding: var(--space-m);
   background: var(--color-white);
+}
+
+.sidebar .panel {
+  text-align: center;
+}
+
+.footer {
+  margin-top: var(--space-l);
+}
+
+@media screen and (max-width: 599px) {
+  .wrap {
+    padding: var(--space-l) 0;
+  }
+  .main {
+    flex: 1 1 100%;
+    padding: var(--space-l);
+  }
+  .sidebar {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar .panel {
+    flex: 1 1 100%;
+    margin-top: var(--space-l);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 959px)  {
+  .wrap {
+    padding: var(--space-l);
+  }
+  .main {
+    flex: 1 1 100%;
+    padding: var(--space-l);
+  }
+  .sidebar {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sidebar .panel {
+    flex: 1 1 40%;
+    margin-top: var(--space-l);
+  }
+  .sidebar .panel:nth-child(2n) {
+    margin-left: var(--space-l);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .wrap {
+    padding: var(--space-l);
+  }
+  .main {
+    flex: 1;
+    padding: var(--space-l);
+  }
+  .sidebar {
+    flex: 0 0 320px;
+    margin-left: var(--space-l);
+  }
+  .sidebar .panel {
+    flex: 1 1 100%;
+  }
+  .sidebar .panel + .panel {
+    margin-top: var(--space-l);
+  }
 }

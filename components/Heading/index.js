@@ -8,7 +8,7 @@ const createTag = (level = 1) => `h${level}`
 
 const Heading = props => {
   const Tag = createTag(props.level)
-  const className = cx(['heading', { deco: props.deco }])
+  const className = cx(['heading', props.type, props.className])
 
   return (
     <Tag className={className}>
@@ -20,7 +20,8 @@ const Heading = props => {
 Heading.propTypes = {
   title: PropTypes.string.isRequired,
   level: PropTypes.number,
-  deco: PropTypes.bool
+  type: PropTypes.oneOf(['title', 'deco']),
+  className: PropTypes.string
 }
 
 export default Heading
