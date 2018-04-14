@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import Link from 'next/link'
@@ -8,17 +9,19 @@ const cx = classNames.bind(css)
 
 const RecipeItem = props => {
   const { recipe, teaser } = props
-  const className = cx(['recipeItem', { recipeItemAsTeaser: teaser }])
+  const className = cx([{ recipeItem: !teaser }, { recipeTeaser: teaser }])
 
   return (
     <div className={className}>
-      <Link as={`/recipes/${recipe.id}`} href={`/recipes?id=${recipe.id}`}>
+      <Link href={`/recipe?id=${recipe.id}`} as={`/recipes/${recipe.id}`}>
         <a className={css.link}>
           <Heading title={recipe.title} level={3} className={css.heading} />
           <img src={`/static/images/recipes/${recipe.id}/preview.jpg`} className={css.preview} />
         </a>
       </Link>
-      <p className={css.abstract}>{recipe.abstract}</p>
+      <p className={css.abstract}>
+        {recipe.abstract}
+      </p>
     </div>
   )
 }

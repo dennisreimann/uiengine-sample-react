@@ -13,7 +13,7 @@ const routes = {
 const cx = classNames.bind(css)
 
 const NavLink = withRouter(({ router, route, title }) => {
-  const isActive = router.pathname === route
+  const isActive = router.pathname === route || (route === '/recipes' && router.pathname.startsWith('/recipes'))
   const className = cx(['link', { linkActive: isActive }])
 
   return (

@@ -4,6 +4,23 @@
   margin-left: calc(var(--space-l) * -1);
 }
 
+.teasers > *:nth-child(1),
+.teasers > *:nth-child(2) {
+  flex-basis: 40%;
+}
+
 .teasers > * {
-  margin: 0  0 var(--space-l) var(--space-l);
+  margin: 0 0 var(--space-l) var(--space-l);
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--space-l) * -1);
+}
+
+.recipes > * {
+  flex: 1 1 262px;
+  max-width: unset;
+  margin: 0 0 var(--space-l) var(--space-l) !important;
 }

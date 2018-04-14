@@ -40,7 +40,7 @@ h5.heading {
 .deco:after {
   display: table-cell;
   content: '';
-  border-top: 1px solid var(--color-brown);
+  border-top: 1px solid var(--color-gray-30);
   width: 50%;
   height: 1px;
   position: relative;
