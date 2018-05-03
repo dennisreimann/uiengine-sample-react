@@ -6,14 +6,32 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+// construct recipes index
+const recipePath = id => join(__dirname, 'static', 'api', 'recipes', `${id}.json`)
+const recipesIndex = [
+  'burgers',
+  'nacho-salad',
+  'gyros',
+  'burnt-ends',
+  'porterhouse-steak',
+  'beer-can-chicken',
+  'onion-moinkballs',
+  'bacon-wrapped-chicken-breasts'
+].map(id => require(recipePath(id)))
+
 app.prepare()
   .then(() => {
     const server = express()
 
     // mock api returns static json
-    server.get('/api/*', (req, res) => {
-      const filePath = join(__dirname, 'static', `${req.path}.json`)
-      res.sendFile(filePath)
+    server.get('/api/recipes/:id', (req, res) => {
+      const { id } = req.params
+
+      if (id === 'index') {
+        res.json(recipesIndex)
+      } else {
+        res.sendFile(recipePath(id))
+      }
     })
 
     server.get('/recipes/:id', (req, res) => {

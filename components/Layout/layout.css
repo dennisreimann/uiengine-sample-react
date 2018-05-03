@@ -25,8 +25,12 @@
   --space-m: .75rem;
   --space-l: 1.25rem;
   --space-xl: 1.75rem;
+  --space-xxl: 2.25rem;
 
   --wrap-width: 1200px;
+  --main-width: 850px;
+  --wrap-padding: var(--space-l);
+  --main-padding: var(--space-l);
 }
 
 @font-face {
@@ -62,6 +66,8 @@ html {
 
 .main {
   background: var(--color-white);
+  max-width: var(--main-width);
+  margin: 0 auto;
 }
 
 .sidebar .panel {
@@ -74,11 +80,11 @@ html {
 
 @media screen and (max-width: 599px) {
   .wrap {
-    padding: var(--space-l) 0;
+    padding: var(--wrap-padding) 0;
   }
   .main {
     flex: 1 1 100%;
-    padding: var(--space-l);
+    padding: var(--main-padding);
   }
   .sidebar {
     flex: 1 1 100%;
@@ -93,11 +99,11 @@ html {
 
 @media screen and (min-width: 600px) and (max-width: 959px)  {
   .wrap {
-    padding: var(--space-l);
+    padding: var(--wrap-padding);
   }
   .main {
     flex: 1 1 100%;
-    padding: var(--space-l);
+    padding: var(--main-padding);
   }
   .sidebar {
     flex: 1 1 100%;
@@ -115,11 +121,11 @@ html {
 
 @media screen and (min-width: 960px) {
   .wrap {
-    padding: var(--space-l);
+    padding: var(--wrap-padding);
   }
   .main {
     flex: 1;
-    padding: var(--space-l);
+    padding: var(--main-padding);
   }
   .sidebar {
     flex: 0 0 320px;

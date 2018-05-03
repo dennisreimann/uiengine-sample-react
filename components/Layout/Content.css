@@ -13,6 +13,10 @@
   margin-bottom: 0;
 }
 
+.content h2 {
+  margin-top: var(--space-xxl);
+}
+
 .content section a {
   color: var(--color-orange);
   text-decoration: underline;
@@ -21,4 +25,8 @@
 .content section a:hover,
 .content section a:focus {
   text-decoration: none;
+}
+
+.content figure {
+  margin: 0 calc(var(--main-padding) * -1) var(--space-l);
 }

@@ -5,14 +5,19 @@ import Navbar from '../Navbar'
 import css from './Header.css'
 import { backgroundImage, heroHeight } from '../../lib/util'
 
-const Title = ({ recipe }) => (
-  <Link href="/">
-    <a className={css.link}>
-      <div className={css.title}>Tasty BBQ</div>
-      <div className={css.subtitle}>homemade • best in town • yummy</div>
-    </a>
-  </Link>
-)
+const Title = ({ recipe }) => {
+  const title = recipe && recipe.title || 'Tasty BBQ'
+  const subtitle = recipe && recipe.subtitle || 'homemade • best in town • yummy'
+
+  return (
+    <Link href="/">
+      <a className={css.link}>
+        <div className={css.title}>{title}</div>
+        <div className={css.subtitle}>{subtitle}</div>
+      </a>
+    </Link>
+  )
+}
 
 Title.propTypes = {
   recipe: PropTypes.shape({

@@ -1,7 +1,7 @@
 import Layout, { Main } from '../components/Layout'
 import Heading from '../components/Heading'
 import RecipeItem from '../components/RecipeItem'
-import ApiService from '../lib/api_service'
+import RecipeService from '../lib/recipe_service'
 import css from './pages.css'
 
 const Recipes = ({ recipes }) => (
@@ -16,7 +16,7 @@ const Recipes = ({ recipes }) => (
 )
 
 Recipes.getInitialProps = async () => {
-  const recipes = await ApiService.load(`/recipes/index`)
+  const recipes = await RecipeService.load('index')
 
   return { recipes }
 }
