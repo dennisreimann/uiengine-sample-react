@@ -5,11 +5,10 @@ Based on [Next.js](https://github.com/zeit/next.js).
 
 ## 📦 Setup
 
-Dependencies are managed via [Yarn](https://yarnpkg.com/).
-Once you have Yarn installed and this repo cloned, you can setup the packages:
+Once you have this repo cloned, you can setup the packages:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## 🛠 Development
@@ -17,5 +16,5 @@ yarn install
 Create a build and rebuild on file change.
 
 ```bash
-yarn start
+npm start
 ```
