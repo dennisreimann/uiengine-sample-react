@@ -3,7 +3,7 @@ import Heading from '../components/Heading'
 import ApiService from '../lib/api_service'
 
 const Recipe = ({ recipe }) => (
-  <Layout>
+  <Layout recipe={recipe}>
     <Main>
       <Heading title={recipe.title} />
       <p>{recipe.summary}</p>

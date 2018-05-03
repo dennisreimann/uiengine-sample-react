@@ -5,8 +5,8 @@ import Panel from '../Panel'
 import Tag from '../Tag'
 import css from './Footer.css'
 
-const Footer = props => (
-  <footer className={classNames([css.footer, props.className])}>
+const Footer = ({ className }) => (
+  <footer className={classNames([css.footer, className])}>
     <div className={classNames([css.panels, css.wrap])}>
       <Panel title="Tags" className={css.panel}>
         <div className={css.tags}>

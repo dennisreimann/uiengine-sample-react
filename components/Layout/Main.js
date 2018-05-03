@@ -2,9 +2,9 @@ import classNames from 'classnames';
 import css from './Layout.css'
 import { content as contentClass } from './Content.css'
 
-const Main = props => (
+const Main = ({ children }) => (
   <main className={classNames([css.main, contentClass])}>
-    {props.children}
+    {children}
   </main>
 )
 

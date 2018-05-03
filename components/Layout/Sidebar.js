@@ -3,7 +3,7 @@ import Panel from '../Panel'
 import css from './Layout.css'
 import { content as contentClass } from './Content.css'
 
-const Sidebar = props => (
+const Sidebar = ({ children }) => (
   <aside className={css.sidebar}>
     <Panel title="Opening Hours" className={css.panel}>
       <p>
@@ -22,7 +22,7 @@ const Sidebar = props => (
       </p>
     </Panel>
 
-    {props.children}
+    {children}
   </aside>
 )
 

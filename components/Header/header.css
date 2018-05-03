@@ -3,11 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/static/images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  height: 30vh;
   min-height: 200px;
   padding-top: 30px;
 }

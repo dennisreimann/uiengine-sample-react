@@ -4,16 +4,20 @@ import Heading from '../Heading'
 import css from './Panel.css'
 import { content as contentClass } from '../Layout/Content.css'
 
-const Panel = props => (
-  <div className={classNames([css.panel, contentClass, props.className])}>
-    <Heading title={props.title} level={3} type='deco' />
-    {props.children}
+const Panel = ({ children, className, title }) => (
+  <div className={classNames([css.panel, contentClass, className])}>
+    <Heading title={title} level={3} type='deco' />
+    {children}
   </div>
 )
 
 Panel.propTypes = {
-  title: PropTypes.string.isRequired,
-  className: PropTypes.string
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.objectOf(PropTypes.element)
+  ]),
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired
 }
 
 export default Panel

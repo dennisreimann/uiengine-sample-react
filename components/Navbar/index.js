@@ -13,7 +13,8 @@ const routes = {
 const cx = classNames.bind(css)
 
 const NavLink = withRouter(({ router, route, title }) => {
-  const isActive = router.pathname === route || (route === '/recipes' && router.pathname.startsWith('/recipes'))
+  const { recipes } = routes
+  const isActive = router.pathname === route || (route === recipes && router.pathname.startsWith(recipes))
   const className = cx(['link', { linkActive: isActive }])
 
   return (
@@ -28,8 +29,8 @@ NavLink.propTypes = {
   title: PropTypes.string.isRequired
 }
 
-const Navbar = props => (
-  <nav className={classNames([css.navbar, props.className])}>
+const Navbar = ({ className }) => (
+  <nav className={classNames([css.navbar, className])}>
     <div className={css.wrap}>
       <NavLink route={routes.home} title="Home" />
       <NavLink route={routes.recipes} title="Recipes" />
