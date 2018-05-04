@@ -18,3 +18,8 @@ Create a build and rebuild on file change.
 ```bash
 npm start
 ```
+
+This starts the following servers:
+
+- Next.js running the app on [localhost:3000](http://localhost:3000)
+- UIengine running the pattern library on [localhost:4000](http://localhost:4000)

@@ -10,7 +10,9 @@
   "repository": "dennisreimann/uiengine-sample-react",
   "main": "pages/index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "rimraf dist && npm run start:next & (sleep 5 && npm run start:uiengine) & wait",
+    "start:next": "node server.js",
+    "start:uiengine": "uiengine build -s -w"
   },
   "keywords": [
     "uiengine",
@@ -25,9 +27,11 @@
     "next": "^6.0.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
+    "@uiengine/adapter-html": "^0.19.1",
     "@uiengine/core": "^0.19.2"
   }
 }
