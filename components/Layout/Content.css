@@ -30,3 +30,7 @@
 .content figure {
   margin: 0 calc(var(--main-padding) * -1) var(--space-l);
 }
+
+.content figure img {
+  width: 100%;
+}

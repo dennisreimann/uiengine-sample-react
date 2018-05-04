@@ -12,10 +12,7 @@ const Panel = ({ children, className, title }) => (
 )
 
 Panel.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.element),
-    PropTypes.objectOf(PropTypes.element)
-  ]),
+  children: PropTypes.node,
   className: PropTypes.string,
   title: PropTypes.string.isRequired
 }

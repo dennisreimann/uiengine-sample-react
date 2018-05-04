@@ -1,6 +1,6 @@
 .recipeItem {
   max-width: 285px;
-  border: 1px solid var(--color-gray-20);
+  border: 1px solid var(--color-gray-10);
   padding: var(--space-s) var(--space-m);
 }
 

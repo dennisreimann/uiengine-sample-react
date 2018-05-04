@@ -1,9 +1,8 @@
 :root {
   --color-white: #FFF;
   --color-white-transparent: rgba(255,255,255,.35);
-  --color-gray-10: #dedcdc;
-  --color-gray-20: #ebebeb;
-  --color-gray-30: #DDD;
+  --color-gray-10: #ebebeb;
+  --color-gray-20: #dedcdc;
   --color-orange: #ff9160;
   --color-orange-transparent: rgba(255,145,96,.35);
   --color-brown: #583f48;
@@ -54,7 +53,7 @@ html {
   font-family: var(--font-family-base);
   font-size: var(--font-size-m);
   line-height: 1.5;
-  background: var(--color-gray-10);
+  background: var(--color-gray-20);
 }
 
 .wrap {

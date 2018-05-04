@@ -31,9 +31,11 @@
 .title {
   font-family: var(--font-family-head);
   font-size: 5rem;
+  line-height: .75;
 }
 
 .subtitle {
   font-family: var(--font-family-deco);
   font-size: 2rem;
+  line-height: 1;
 }
