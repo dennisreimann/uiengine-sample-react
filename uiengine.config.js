@@ -4,6 +4,7 @@ module.exports = {
   // For a detailed documentation of all the options in here see
   // https://github.com/dennisreimann/uiengine/blob/master/docs/config.md
   name: 'Tasty BBQ',
+  copyright: 'Copyright © Dennis Reimann. <a href="https://github.com/dennisreimann/uiengine">Generated with UIengine</a>.',
 
   // Base directories for the input, your raw source files:
   // - components is the root of the directory containing the components
@@ -33,7 +34,7 @@ module.exports = {
 
   ui: {
     lang: 'en',
-    customStylesFile: '/static/ui-custom.css',
+    customStylesFile: '/static/styles/ui-custom.css',
     breakpoints: {
       S: 360,
       M: 640,

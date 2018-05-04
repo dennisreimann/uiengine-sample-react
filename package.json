@@ -31,7 +31,7 @@
     "rimraf": "^2.6.2"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "^0.19.1",
-    "@uiengine/core": "^0.19.2"
+    "@uiengine/adapter-html": "^0.19.3",
+    "@uiengine/core": "^0.19.3"
   }
 }
