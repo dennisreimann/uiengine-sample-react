@@ -26,3 +26,6 @@ This starts the following servers:
 
 The build process is provided by Next.js.
 If you want to see the changes in the JSX and CSS files to be reflected in the UIengine, make sure the Next.js server is also running.
+
+In case the styles are missing, open up [localhost:3000](http://localhost:3000) in your browser.
+This will trigger a Next.js build.

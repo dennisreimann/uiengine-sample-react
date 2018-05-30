@@ -1,6 +1,7 @@
 const express = require('express')
 const next = require('next')
 const { join } = require('path')
+const { recipeIds } = require('./lib/util')
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
@@ -8,16 +9,7 @@ const handle = app.getRequestHandler()
 
 // construct recipes index
 const recipePath = id => join(__dirname, 'static', 'api', 'recipes', `${id}.json`)
-const recipesIndex = [
-  'burgers',
-  'nacho-salad',
-  'gyros',
-  'burnt-ends',
-  'porterhouse-steak',
-  'beer-can-chicken',
-  'onion-moinkballs',
-  'bacon-wrapped-chicken-breasts'
-].map(id => require(recipePath(id)))
+const recipesIndex = recipeIds.map(id => require(recipePath(id)))
 
 app.prepare()
   .then(() => {

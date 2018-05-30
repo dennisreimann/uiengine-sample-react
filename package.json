@@ -12,7 +12,10 @@
   "scripts": {
     "start": "rimraf dist && npm run start:next & (sleep 5 && npm run start:uiengine) & wait",
     "start:next": "node server.js",
-    "start:uiengine": "uiengine build -s -w"
+    "start:uiengine": "uiengine build -s -w",
+    "build": "rimraf dist && npm run build:next & npm run build:uiengine",
+    "build:next": "rimraf out && npm run start:next & (sleep 5 && next build && next export && kill $!)",
+    "build:uiengine": "uiengine build"
   },
   "keywords": [
     "uiengine",
