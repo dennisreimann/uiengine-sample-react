@@ -5,6 +5,7 @@ module.exports = {
   // https://github.com/dennisreimann/uiengine/blob/master/docs/config.md
   name: 'Tasty BBQ',
   copyright: 'Copyright © Dennis Reimann. <a href="https://github.com/dennisreimann/uiengine">Generated with UIengine</a>.',
+  debug: true,
 
   // Base directories for the input, your raw source files:
   // - components is the root of the directory containing the components
@@ -26,7 +27,9 @@ module.exports = {
   // Adapters are used for templating/rendering. Each adapter is a module that gets required
   // and needs to provide functions for setup and rendering. For details see the adapters docs.
   adapters: {
-    html: '@uiengine/adapter-html'
+    html: '@uiengine/adapter-html',
+    css: './lib/uiengine/css.js',
+    js: './lib/uiengine/react.js'
   },
 
   // Here you can configure the template that the variant preview gets embeded in.
@@ -44,6 +47,11 @@ module.exports = {
   },
 
   browserSync: {
-    port: 4000
+    port: 4000,
+    open: false,
+    serveStatic: [{
+      route: '/static',
+      dir: ['./static', './dist/static']
+    }]
   }
 }

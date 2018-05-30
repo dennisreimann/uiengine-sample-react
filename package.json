@@ -20,18 +20,26 @@
     "react"
   ],
   "dependencies": {
-    "@zeit/next-css": "^0.1.5",
+    "@zeit/next-css": "^0.2.0",
     "classnames": "^2.2.5",
     "express": "^4.16.3",
     "isomorphic-unfetch": "^2.0.0",
-    "next": "^6.0.0",
+    "next": "^6.0.3",
     "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "rimraf": "^2.6.2"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "^0.19.3",
-    "@uiengine/core": "^0.19.3"
+    "@babel/core": "7.0.0-beta.42",
+    "@babel/preset-env": "7.0.0-beta.42",
+    "@babel/preset-react": "7.0.0-beta.42",
+    "@babel/preset-stage-2": "7.0.0-beta.42",
+    "@babel/register": "7.0.0-beta.42",
+    "@uiengine/adapter-html": "^0.20.0",
+    "@uiengine/core": "^0.20.0",
+    "ajv": "^6.5.0",
+    "babel-plugin-css-modules-transform": "^1.6.1",
+    "postcss": "^6.0.22",
+    "rimraf": "^2.6.2"
   }
 }
