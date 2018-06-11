@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
-    "classnames": "^2.2.5",
+    "classnames": "^2.2.6",
     "express": "^4.16.3",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.3",
@@ -39,7 +39,7 @@
     "@babel/preset-stage-2": "7.0.0-beta.42",
     "@babel/register": "7.0.0-beta.42",
     "@uiengine/adapter-html": "^0.20.0",
-    "@uiengine/core": "^0.20.0",
+    "@uiengine/core": "^0.21.0",
     "ajv": "^6.5.0",
     "babel-plugin-css-modules-transform": "^1.6.1",
     "postcss": "^6.0.22",

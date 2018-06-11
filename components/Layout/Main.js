@@ -1,3 +1,4 @@
+import React from 'react'
 import classNames from 'classnames';
 import css from './Layout.css'
 import { content as contentClass } from './Content.css'

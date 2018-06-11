@@ -1,0 +1,22 @@
+:root {
+  --uie-color-accent-extralight: #F3A379;
+  --uie-color-accent-light: #ff9160;
+  --uie-color-accent-medium: #C68362;
+  --uie-color-accent-middark: #AB7255;
+  --uie-color-accent-dark: #583f48;
+  --uie-color-accent-extradark: #332B2E;
+
+  --uie-color-bg-light: #ebebeb;
+  --uie-color-bg-medium: #dedcdc;
+}
+
+.uie .uie-icon-token__value--icon {
+  padding-top: var(--uie-space-s) !important;
+  padding-left: var(--uie-space-m) !important;
+  background-color: var(--uie-color-bg-medium);
+}
+
+.uie .uie-icon-token__value--icon img {
+  width: 24px;
+  height: 24px;
+}

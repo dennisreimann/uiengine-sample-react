@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="uiengine-preview <!-- uiengine:class -->">
   <head>
     <title><!-- uiengine:title --></title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -7,6 +7,11 @@
 
     <!-- custom styles -->
     <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/styles/uiengine-customizations.css" rel="stylesheet">
+    <style>
+      html.uiengine-preview:not(.uie-variant--Icon) { background: var(--color-white); }
+      .uie-variant--Icon img { width: 3em; height: 3em; margin: 1em; }
+    </style>
   </head>
   <body>
     <!-- uiengine:content -->

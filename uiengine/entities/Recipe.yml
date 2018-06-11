@@ -1,0 +1,18 @@
+id:
+  type: String
+  description: The recipe ID, which is also used as slug.
+  required: true
+title:
+  type: String
+  description: A short and descriptive title.
+  required: true
+subtitle:
+  type: String
+  description: An optional supplementary title.
+abstract:
+  type: String
+  description: One or two sentences that summarize the recipe.
+images:
+  type: Number
+  description: How many images does the recipe have?
+  default: 0

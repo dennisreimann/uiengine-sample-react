@@ -1,1 +1,5 @@
-# Modules
+---
+components:
+- Panel
+- RecipeItem
+---

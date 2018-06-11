@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import { withRouter } from 'next/router'
@@ -14,7 +15,7 @@ const cx = classNames.bind(css)
 
 const NavLink = withRouter(({ router, route, title }) => {
   const { recipes } = routes
-  const isActive = router.pathname === route || (route === recipes && router.pathname.startsWith(recipes))
+  const isActive = router && (router.pathname === route || (route === recipes && router.pathname.startsWith('/recipe')))
   const className = cx(['link', { linkActive: isActive }])
 
   return (

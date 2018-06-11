@@ -1,3 +1,4 @@
+import React from 'react'
 import Heading from '../Heading'
 import Panel from '../Panel'
 import css from './Layout.css'

@@ -17,8 +17,8 @@ module.exports = {
     components: './components',
     templates: './templates',
     pages: './uiengine/pages',
-    data: './uiengine/data',
-    entities: './uiengine/entities'
+    entities: './uiengine/entities',
+    data: './static/api'
   },
 
   // Destination paths for the generated output.
@@ -37,7 +37,8 @@ module.exports = {
 
   ui: {
     lang: 'en',
-    customStylesFile: '/static/styles/ui-custom.css',
+    hljs: 'gruvbox-dark',
+    customStylesFile: '/static/styles/uiengine-customizations.css',
     breakpoints: {
       S: 360,
       M: 640,

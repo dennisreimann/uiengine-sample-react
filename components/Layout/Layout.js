@@ -1,7 +1,6 @@
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Header from '../Header'
-import Heading from '../Heading'
 import Main from './Main'
 import Sidebar from './Sidebar'
 import Socialbar from '../Socialbar'
