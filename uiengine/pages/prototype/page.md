@@ -1,1 +1,7 @@
-# Prototype
+---
+children:
+- home
+- recipes
+- recipe
+- about
+---

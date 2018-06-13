@@ -44,6 +44,17 @@ module.exports = {
       M: 640,
       L: 960,
       XL: 1280
+    },
+    viewports: {
+      Phone: {
+        width: 360
+      },
+      Tablet: {
+        width: 768
+      },
+      Desktop: {
+        width: 1280
+      }
     }
   },
 
