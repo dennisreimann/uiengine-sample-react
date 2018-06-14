@@ -29,19 +29,20 @@
     "isomorphic-unfetch": "^2.0.0",
     "next": "^6.0.3",
     "prop-types": "^15.6.1",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.42",
     "@babel/preset-env": "7.0.0-beta.42",
-    "@babel/preset-react": "7.0.0-beta.42",
+    "@babel/preset-react": "7.0.0-beta.51",
     "@babel/preset-stage-2": "7.0.0-beta.42",
     "@babel/register": "7.0.0-beta.42",
-    "@uiengine/adapter-html": "^0.20.0",
-    "@uiengine/core": "^0.21.0",
-    "ajv": "^6.5.0",
+    "@uiengine/adapter-html": "^0.21.0",
+    "@uiengine/core": "^0.21.2",
+    "ajv": "^6.5.1",
     "babel-plugin-css-modules-transform": "^1.6.1",
+    "html-sketchapp-cli": "0.5.1",
     "postcss": "^6.0.22",
     "rimraf": "^2.6.2"
   }
