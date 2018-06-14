@@ -15,7 +15,8 @@
     "start:uiengine": "uiengine build -s -w",
     "build": "rimraf dist && npm run build:next & npm run build:uiengine",
     "build:next": "rimraf out && npm run start:next & (sleep 5 && next build && next export && kill $!)",
-    "build:uiengine": "uiengine build"
+    "build:uiengine": "uiengine build",
+    "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
   },
   "keywords": [
     "uiengine",
