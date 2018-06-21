@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Icon from '../Icon'
-import css from './Socialbar.css'
+import { Recipe } from '../../lib/types'
 import { backgroundImage } from '../../lib/util'
+import css from './Socialbar.css'
 
 const SocialLink = ({ title }) => (
   <a href="#" className={css.link}>
@@ -33,9 +34,7 @@ const SocialBar = ({ recipe }) => {
 }
 
 SocialBar.propTypes = {
-  recipe: PropTypes.shape({
-    id: PropTypes.string
-  })
+  recipe: Recipe
 }
 
 export default SocialBar

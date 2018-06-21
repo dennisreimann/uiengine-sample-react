@@ -2,6 +2,7 @@ import React from 'react'
 import { Fragment } from 'react'
 import Layout, { Main } from '../components/Layout'
 import Heading from '../components/Heading'
+import { Recipe } from '../lib/types'
 
 const generateNode = (id, num) => (
   <Fragment key={`${id}-${num}`}>
@@ -27,7 +28,7 @@ const generateNode = (id, num) => (
 // generate some content based on the number of images
 const generateNodes = recipe => Array.from(Array(recipe.images).keys()).map(idx => generateNode(recipe.id, idx + 1))
 
-const Recipe = ({ recipe }) => (
+const RecipePage = ({ recipe }) => (
   <Layout recipe={recipe}>
     <Main>
       <Heading title={recipe.title} type='deco' />
@@ -37,4 +38,8 @@ const Recipe = ({ recipe }) => (
   </Layout>
 )
 
-export default Recipe
+RecipePage.propTypes = {
+  recipe: Recipe
+}
+
+export default RecipePage

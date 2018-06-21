@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classNames from 'classnames';
 import css from './Layout.css'
 import { content as contentClass } from './Content.css'
@@ -8,5 +9,15 @@ const Main = ({ children }) => (
     {children}
   </main>
 )
+
+Main.propTypes = {
+  /**
+   * The main page content.
+   */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired
+}
 
 export default Main

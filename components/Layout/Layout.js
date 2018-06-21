@@ -1,11 +1,10 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Header from '../Header'
-import Main from './Main'
-import Sidebar from './Sidebar'
 import Socialbar from '../Socialbar'
 import Footer from '../Footer'
 import css from './Layout.css'
+import { Recipe } from '../../lib/types'
 
 const Layout = ({ children, recipe }) => (
   <Fragment>
@@ -19,17 +18,14 @@ const Layout = ({ children, recipe }) => (
 )
 
 Layout.propTypes = {
+  recipe: Recipe,
+  /**
+   * At least a `Main` component, can also be supplemented with an optional `Sidebar` component.
+   */
   children: PropTypes.oneOfType([
-    PropTypes.objectOf(Main),
-    PropTypes.arrayOf(
-      PropTypes.objectOf(Main),
-      PropTypes.objectOf(Sidebar)
-    )
-  ]),
-  recipe: PropTypes.shape({
-    id: PropTypes.string,
-    title: PropTypes.string
-  })
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired
 }
 
 export default Layout

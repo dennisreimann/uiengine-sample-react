@@ -1,12 +1,4 @@
 ---
-properties:
-  <RecipeItem recipe={recipe} teaser={isTeaser}>:
-    recipe:
-      type: Recipe
-      required: true
-    isTeaser:
-      type: Boolean
-      default: false
 variants:
 - file: Default.js
   description: The default recipe item should be used in overview lists.

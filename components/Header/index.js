@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Navbar from '../Navbar'
 import css from './Header.css'
+import { Recipe } from '../../lib/types'
 import { backgroundImage, heroHeight } from '../../lib/util'
 
 const Title = ({ recipe }) => {
@@ -21,10 +22,7 @@ const Title = ({ recipe }) => {
 }
 
 Title.propTypes = {
-  recipe: PropTypes.shape({
-    id: PropTypes.string,
-    title: PropTypes.string
-  })
+  recipe: Recipe
 }
 
 const Header = ({ className, recipe }) => {
@@ -43,7 +41,7 @@ const Header = ({ className, recipe }) => {
 
 Header.propTypes = {
   className: PropTypes.string,
-  recipe: Title.propTypes.recipe
+  recipe: Recipe
 }
 
 export default Header

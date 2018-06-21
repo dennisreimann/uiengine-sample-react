@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import Link from 'next/link'
 import Heading from '../Heading'
+import { Recipe } from '../../lib/types'
 import css from './RecipeItem.css'
 
 const cx = classNames.bind(css)
@@ -29,10 +30,12 @@ const RecipeItem = props => {
 }
 
 RecipeItem.propTypes = {
-  recipe: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired
-  })
+  recipe: Recipe,
+  isTeaser: PropTypes.bool
+}
+
+RecipeItem.defaultProps = {
+  isTeaser: false
 }
 
 export default RecipeItem

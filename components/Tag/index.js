@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import css from './Tag.css'
 
 const Tag = props => (
-  <a href="#" className={classNames([css.tag, props.className])}>
+  <a href={props.href} className={classNames([css.tag, props.className])}>
     {props.title}
   </a>
 )
@@ -12,6 +12,10 @@ const Tag = props => (
 Tag.propTypes = {
   title: PropTypes.string.isRequired,
   className: PropTypes.string
+}
+
+Tag.defaultProps = {
+  href: '#'
 }
 
 export default Tag

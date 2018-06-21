@@ -2,7 +2,7 @@ import React from 'react'
 import Layout, { Main, Sidebar } from '../components/Layout'
 import Heading from '../components/Heading'
 
-const About = () => (
+const AboutPage = () => (
   <Layout>
     <Main>
       <Heading title="About Tasty BBQ" />
@@ -54,4 +54,4 @@ const About = () => (
   </Layout>
 )
 
-export default About
+export default AboutPage

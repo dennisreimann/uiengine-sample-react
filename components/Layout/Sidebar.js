@@ -1,8 +1,7 @@
 import React from 'react'
-import Heading from '../Heading'
+import PropTypes from 'prop-types'
 import Panel from '../Panel'
 import css from './Layout.css'
-import { content as contentClass } from './Content.css'
 
 const Sidebar = ({ children }) => (
   <aside className={css.sidebar}>
@@ -26,5 +25,15 @@ const Sidebar = ({ children }) => (
     {children}
   </aside>
 )
+
+Sidebar.propTypes = {
+  /**
+   * The children will be displayed beneath the sidebars default content.
+   */
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ])
+}
 
 export default Sidebar

@@ -1,8 +1,4 @@
 ---
-properties:
-  <Header recipe={recipe}>:
-    recipe:
-      type: Recipe
 context:
   recipe: !data /recipes/beer-can-chicken.json
 ---

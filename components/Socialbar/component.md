@@ -1,8 +1,4 @@
 ---
-properties:
-  <Socialbar recipe={recipe}>:
-    recipe:
-      type: Recipe
 context:
   recipe: !data /recipes/burgers.json
 ---

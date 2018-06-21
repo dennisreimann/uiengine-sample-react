@@ -21,8 +21,15 @@ const Heading = props => {
 Heading.propTypes = {
   title: PropTypes.string.isRequired,
   level: PropTypes.number,
-  type: PropTypes.oneOf(['title', 'deco']),
+  /**
+   * Can be blank, 'title' or 'deco'
+   */
+  type: PropTypes.string,
   className: PropTypes.string
+}
+
+Heading.defaultProps = {
+  level: 1
 }
 
 export default Heading

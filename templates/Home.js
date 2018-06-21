@@ -1,11 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Layout, { Main, Sidebar } from '../components/Layout'
 import Heading from '../components/Heading'
 import RecipeItem from '../components/RecipeItem'
+import { Recipe } from '../lib/types'
 import Link from 'next/link'
 import css from './pages.css'
 
-const Home = ({ recipes }) => (
+const HomePage = ({ recipes }) => (
   <Layout>
     <Main>
       <section>
@@ -53,4 +55,8 @@ const Home = ({ recipes }) => (
   </Layout>
 )
 
-export default Home
+HomePage.propTypes = {
+  recipes: PropTypes.arrayOf(Recipe)
+}
+
+export default HomePage
