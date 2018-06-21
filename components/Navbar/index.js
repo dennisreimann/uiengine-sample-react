@@ -1,29 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
+import { RoutesContext } from '../../lib/routes'
 import { withRouter } from 'next/router'
 import Link from 'next/link'
 import css from './Navbar.css'
 
-const routes = {
-  home: '/',
-  recipes: '/recipes',
-  about: '/about'
-}
-
 const cx = classNames.bind(css)
 
-const NavLink = withRouter(({ router, route, title }) => {
-  const { recipes } = routes
-  const isActive = router && (router.pathname === route || (route === recipes && router.pathname.startsWith('/recipe')))
-  const className = cx(['link', { linkActive: isActive }])
+const NavLink = withRouter(
+  ({ router, route, title }) => (
+    <RoutesContext.Consumer>
+      {routes => {
+        const { recipes } = routes
+        const isActive = router && (router.pathname === route || (route === recipes && router.pathname.startsWith(routes.recipe)))
+        const className = cx(['link', { linkActive: isActive }])
 
-  return (
-    <Link href={route}>
-      <a className={className}>{title}</a>
-    </Link>
+        return (
+          <Link href={route}>
+            <a className={className}>{title}</a>
+          </Link>
+        )
+      }}
+    </RoutesContext.Consumer>
   )
-})
+)
 
 NavLink.propTypes = {
   route: PropTypes.string.isRequired,
@@ -32,11 +33,15 @@ NavLink.propTypes = {
 
 const Navbar = ({ className }) => (
   <nav className={classNames([css.navbar, className])}>
-    <div className={css.wrap}>
-      <NavLink route={routes.home} title="Home" />
-      <NavLink route={routes.recipes} title="Recipes" />
-      <NavLink route={routes.about} title="About" />
-    </div>
+    <RoutesContext.Consumer>
+      {routes => (
+        <div className={css.wrap}>
+          <NavLink route={routes.home} title="Home" />
+          <NavLink route={routes.recipes} title="Recipes" />
+          <NavLink route={routes.about} title="About" />
+        </div>
+      )}
+    </RoutesContext.Consumer>
   </nav>
 )
 

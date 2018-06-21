@@ -30,7 +30,7 @@ module.exports = {
     html: '@uiengine/adapter-html',
     css: './lib/uiengine/css.js',
     js: {
-      module: '@uiengine/adapter-react',
+      module: './lib/uiengine/react.js',
       options: {
         babelRegisterModule: '@babel/register',
         babel: {

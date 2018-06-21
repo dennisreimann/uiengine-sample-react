@@ -1,8 +1,9 @@
 ---
 template: Recipes.js
-wrapTemplate: true
 
 context:
+  title: Recipes
+  class: uie-page uie-page--recipes
   recipes:
     - !data /recipes/bacon-wrapped-chicken-breasts.json
     - !data /recipes/beer-can-chicken.json

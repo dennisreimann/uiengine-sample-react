@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout, { Main, Sidebar } from '..'
 
-export default (props) => (
+export default () => (
   <Layout>
     <Main>
       <p>Here goes the main content</p>

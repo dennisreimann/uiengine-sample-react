@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Navbar from '../Navbar'
 import css from './Header.css'
+import { RoutesContext } from '../../lib/routes'
 import { Recipe } from '../../lib/types'
 import { backgroundImage, heroHeight } from '../../lib/util'
 
@@ -12,12 +13,16 @@ const Title = ({ recipe }) => {
   const subtitle = recipe && recipe.subtitle || 'homemade • best in town • yummy'
 
   return (
-    <Link href="/">
-      <a className={css.link}>
-        <div className={css.title}>{title}</div>
-        <div className={css.subtitle}>{subtitle}</div>
-      </a>
-    </Link>
+    <RoutesContext.Consumer>
+      {routes => (
+        <Link href={routes.home}>
+          <a className={css.link}>
+            <div className={css.title}>{title}</div>
+            <div className={css.subtitle}>{subtitle}</div>
+          </a>
+        </Link>
+      )}
+    </RoutesContext.Consumer>
   )
 }
 

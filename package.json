@@ -10,12 +10,13 @@
   "repository": "dennisreimann/uiengine-sample-react",
   "main": "pages/index.js",
   "scripts": {
-    "start": "rimraf dist && npm run start:next & (sleep 5 && npm run start:uiengine) & wait",
+    "start": "rimraf dist && npm-run-all --parallel start:*",
     "start:next": "node server.js",
     "start:uiengine": "uiengine build -s -w",
-    "build": "rimraf dist && npm run build:next & npm run build:uiengine",
-    "build:next": "rimraf out && npm run start:next & (sleep 5 && next build && next export && kill $!)",
+    "build": "rimraf dist && npm-run-all --parallel build:*",
+    "build:next": "rimraf out && npm-run-all --parallel start:next export",
     "build:uiengine": "uiengine build",
+    "export": "sleep 5 && next build && next export",
     "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
   },
   "keywords": [
@@ -28,8 +29,8 @@
     "classnames": "^2.2.6",
     "express": "^4.16.3",
     "isomorphic-unfetch": "^2.0.0",
-    "next": "^6.0.3",
-    "prop-types": "^15.6.0",
+    "next": "^6.1.0",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
@@ -40,13 +41,14 @@
     "@babel/preset-stage-2": "7.0.0-beta.42",
     "@babel/register": "7.0.0-beta.42",
     "@uiengine/adapter-html": "^0.21.0",
-    "@uiengine/adapter-react": "^0.22.2",
-    "@uiengine/core": "^0.22.2",
+    "@uiengine/adapter-react": "^0.22.4",
+    "@uiengine/core": "^0.22.3",
     "ajv": "^6.5.1",
     "babel-plugin-css-modules-transform": "^1.6.1",
-    "html-sketchapp-cli": "0.5.1",
-    "postcss": "^6.0.22",
-    "react-docgen": "^2.20.1",
+    "html-sketchapp-cli": "0.5.2",
+    "npm-run-all": "^4.1.3",
+    "postcss": "^6.0.23",
+    "react-docgen": "^2.21.0",
     "rimraf": "^2.6.2"
   }
 }

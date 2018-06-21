@@ -1,8 +1,9 @@
 ---
 template: Recipe.js
-wrapTemplate: true
 
 context:
+  title: Recipes
+  class: uie-page uie-page--recipe
   recipe: !data /recipes/porterhouse-steak.json
 
 properties:

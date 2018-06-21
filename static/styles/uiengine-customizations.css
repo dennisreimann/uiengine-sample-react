@@ -10,14 +10,16 @@
   --uie-color-bg-medium: #dedcdc;
 }
 
-.uiengine-preview:not(.uie-variant--Icon) {
+.uie-tokens,
+.uie-variant:not(.uie-variant--Layout) {
   background: var(--color-white);
 }
 
+.uie-variant--Icon,
 .uie .uie-icon-token__value--icon {
   padding-top: var(--uie-space-s) !important;
   padding-left: var(--uie-space-m) !important;
-  background-color: var(--uie-color-bg-medium);
+  background-color: var(--uie-color-bg-medium) !important;
 }
 
 .uie-variant--Icon img,

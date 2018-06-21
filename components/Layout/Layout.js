@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Header from '../Header'
 import Socialbar from '../Socialbar'
 import Footer from '../Footer'
+import Main from './Main'
+import Sidebar from './Sidebar'
 import css from './Layout.css'
 import { Recipe } from '../../lib/types'
 
@@ -23,8 +25,13 @@ Layout.propTypes = {
    * At least a `Main` component, can also be supplemented with an optional `Sidebar` component.
    */
   children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.objectOf(Main),
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([
+        PropTypes.objectOf(Main),
+        PropTypes.objectOf(Sidebar)
+      ])
+    )
   ]).isRequired
 }
 
