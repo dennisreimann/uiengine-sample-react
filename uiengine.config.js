@@ -22,7 +22,7 @@ module.exports = {
   },
 
   // Destination paths for the generated output.
-  target: './dist/uiengine',
+  target: './dist/design-system/',
 
   // Adapters are used for templating/rendering. Each adapter is a module that gets required
   // and needs to provide functions for setup and rendering. For details see the adapters docs.
@@ -55,6 +55,7 @@ module.exports = {
   template: 'uiengine.html',
 
   ui: {
+    base: '/design-system/',
     lang: 'en',
     hljs: 'gruvbox-dark',
     customStylesFile: '/static/styles/uiengine-customizations.css',
@@ -80,6 +81,9 @@ module.exports = {
   browserSync: {
     port: 4000,
     open: false,
+    server: {
+      baseDir: './dist/'
+    },
     serveStatic: [{
       route: '/static',
       dir: ['./static', './dist/static']

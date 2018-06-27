@@ -22,7 +22,7 @@ npm start
 This starts the following servers:
 
 - Next.js running the app on [localhost:3000](http://localhost:3000)
-- UIengine running the pattern library on [localhost:4000](http://localhost:4000)
+- UIengine running the pattern library on [localhost:4000](http://localhost:4000/design-system/)
 
 The build process is provided by Next.js.
 If you want to see the changes in the JSX and CSS files to be reflected in the UIengine, make sure the Next.js server is also running.

@@ -13,11 +13,20 @@
     "start": "rimraf dist && npm-run-all --parallel start:*",
     "start:next": "node server.js",
     "start:uiengine": "uiengine build -s -w",
-    "build": "rimraf dist && npm-run-all --parallel build:*",
-    "build:next": "rimraf out && npm-run-all --parallel start:next export",
-    "build:uiengine": "uiengine build",
-    "export": "sleep 5 && next build && next export",
+    "build": "rimraf dist out && npm-run-all build:*",
+    "build:next": "npm-run-all --parallel start:next export",
+    "build:uiengine": "uiengine build && cp -r dist/design-system out",
+    "export": "next build && next export && cp -r out/_next/static/ out/static && pkill node server.js",
+    "deploy": "HOST=$npm_package_config_deployment_host npm run build && $npm_package_config_deployment_command $npm_package_config_deployment_source $npm_package_config_deployment_target",
     "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
+  },
+  "config": {
+    "deployment": {
+      "host": "https://uiengine-sample-react.uix.space",
+      "command": "rsync -ravzulO --chmod=u=rwX,g=rX --delete-after",
+      "source": "lib/deploy/ out/",
+      "target": "uiengine-sample-react.uix.space:virtual/uiengine-sample-react.uix.space"
+    }
   },
   "keywords": [
     "uiengine",
