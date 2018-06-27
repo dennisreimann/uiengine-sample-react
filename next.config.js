@@ -1,5 +1,5 @@
 const withCSS = require('@zeit/next-css')
-const { recipeIds } = require('./lib/util')
+const recipes = require('./static/api/recipes')
 
 const paths = {
   '/': { page: '/' },
@@ -7,7 +7,7 @@ const paths = {
   '/recipes': { page: '/recipes' }
 }
 
-recipeIds.forEach(id => {
+recipes.forEach(({ id }) => {
   paths[`/recipes/${id}`] = { page: '/recipe', query: { id } }
 })
 

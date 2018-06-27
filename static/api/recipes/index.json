@@ -1,0 +1,55 @@
+[
+  {
+    "id": "burgers",
+    "title": "Grilling burgers",
+    "subtitle": "Juicy beef, kissed by the flame!",
+    "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+    "images": 3
+  },
+  {
+    "id": "nacho-salad",
+    "title": "Nacho Salad",
+    "subtitle": "Beware, it's hot!",
+    "abstract": "Pork loin pork meatloaf short loin bacon. Capicola bacon short ribs jowl. Pork corned beef brisket venison, filet mignon tongue ham leberkas chuck short ribs short loin ground round shankle.",
+    "images": 3
+  },
+  {
+    "id": "gyros",
+    "title": "Gyros",
+    "abstract": "Spare ribs meatball bacon, shankle ribeye porchetta frankfurter sausage biltong turkey pork chop leberkas alcatra pork tenderloin.",
+    "images": 3
+  },
+  {
+    "id": "burnt-ends",
+    "title": "Brisket Burnt Ends",
+    "abstract": "Venison tenderloin fatback, jowl ball tip chuck ground round. Turducken venison bresaola, shankle strip steak buffalo doner biltong short loin.",
+    "images": 4
+  },
+  {
+    "id": "porterhouse-steak",
+    "title": "Porterhouse Steak",
+    "subtitle": "Ma, wow, look at that!",
+    "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+    "images": 4
+  },
+  {
+    "id": "beer-can-chicken",
+    "title": "Beer Can Chicken",
+    "subtitle": "With a castiron pan",
+    "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+    "images": 3
+  },
+  {
+    "id": "onion-moinkballs",
+    "title": "Onion Moinkballs",
+    "abstract": "Swine picanha bacon shank pork chop turducken tail tongue pork loin burgdoggen. Biltong pork belly meatloaf ham, chicken bacon drumstick alcatra shoulder strip steak.",
+    "images": 2
+  },
+  {
+    "id": "bacon-wrapped-chicken-breasts",
+    "title": "Bacon-wrapped Chicken Breasts",
+    "subtitle": "Because everything becomes better with bacon!",
+    "abstract": "Spicy jalapeno bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola fatback pig ball tip.",
+    "images": 4
+  }
+]
