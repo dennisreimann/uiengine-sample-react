@@ -17,7 +17,8 @@
     "build:next": "npm-run-all --parallel start:next export",
     "build:uiengine": "uiengine build && cp -r dist/design-system out",
     "export": "next build && next export && cp -r out/_next/static/ out/static && pkill node server.js",
-    "deploy": "HOST=$npm_package_config_deployment_host npm run build && $npm_package_config_deployment_command $npm_package_config_deployment_source $npm_package_config_deployment_target",
+    "production": "HOST=$npm_package_config_deployment_host npm run build",
+    "deploy": "$npm_package_config_deployment_command $npm_package_config_deployment_source $npm_package_config_deployment_target",
     "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
   },
   "config": {
