@@ -1,5 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-import { HOST } from '../lib/env'
+import { APP_HOST } from '../lib/env'
 
 export default class MyDocument extends Document {
   render () {
@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="stylesheet" href="/_next/static/style.css" />
           <script dangerouslySetInnerHTML={{
-            __html: `window.App = ${JSON.stringify({ HOST })}`
+            __html: `window.App = ${JSON.stringify({ HOST: APP_HOST })}`
           }}
         />
         </Head>

@@ -4,6 +4,7 @@ import Layout, { Main, Sidebar } from '../components/Layout'
 import Heading from '../components/Heading'
 import RecipeItem from '../components/RecipeItem'
 import { Recipe } from '../lib/types'
+import { APP_ROUTES } from '../lib/routes'
 import Link from 'next/link'
 import css from './pages.css'
 
@@ -13,10 +14,12 @@ const HomePage = ({ recipes }) => (
       <section>
         <Heading title="Welcome to Tasty BBQ" />
         <p>
-          Bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola
-          fatback pig ball tip. Swine picanha bacon shank pork chop turducken tail
-          tongue pork loin burgdoggen. Biltong pork belly meatloaf ham, chicken bacon
-          drumstick alcatra shoulder strip steak. Short ribs meatloaf biltong salami.
+          This is a sample project to showcase the basic functionality provided by the <a href="https://github.com/dennisreimann/uiengine">UIengine</a>.
+          This website is built with React and Next.js.
+          Also see the <a href={APP_ROUTES.designsystem}>corresponding design system</a> documentation, built with the UIengine.
+        </p>
+        <p>
+          You can check out the <a href="https://github.com/dennisreimann/uiengine-sample-react">source code on GitHub</a>.
         </p>
       </section>
 
