@@ -5,7 +5,7 @@ import Socialbar from '../Socialbar'
 import Footer from '../Footer'
 import Main from './Main'
 import Sidebar from './Sidebar'
-import css from './Layout.css'
+import css from './layout.css'
 import { Recipe } from '../../lib/types'
 
 const Layout = ({ children, recipe }) => (

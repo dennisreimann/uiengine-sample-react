@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Panel from '../Panel'
 import Tag from '../Tag'
-import css from './Footer.css'
+import css from './footer.css'
 
 const Footer = ({ className }) => (
   <footer className={classNames([css.footer, className])}>

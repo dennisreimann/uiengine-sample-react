@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames';
-import css from './Layout.css'
-import { content as contentClass } from './Content.css'
+import css from './layout.css'
+import { content as contentClass } from './content.css'
 
 const Main = ({ children }) => (
   <main className={classNames([css.main, contentClass])}>

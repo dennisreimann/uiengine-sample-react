@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import Heading from '../Heading'
-import css from './Panel.css'
-import { content as contentClass } from '../Layout/Content.css'
+import css from './panel.css'
+import { content as contentClass } from '../Layout/content.css'
 
 const Panel = ({ children, className, title }) => (
   <div className={classNames([css.panel, contentClass, className])}>

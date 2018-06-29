@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Icon from '../Icon'
 import { Recipe } from '../../lib/types'
 import { backgroundImage } from '../../lib/util'
-import css from './Socialbar.css'
+import css from './socialbar.css'
 
 const SocialLink = ({ title }) => (
   <a href="#" className={css.link}>

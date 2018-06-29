@@ -4,7 +4,7 @@ import classNames from 'classnames/bind'
 import { RoutesContext } from '../../lib/routes'
 import { withRouter } from 'next/router'
 import Link from 'next/link'
-import css from './Navbar.css'
+import css from './navbar.css'
 
 const cx = classNames.bind(css)
 

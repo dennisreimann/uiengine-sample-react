@@ -4,7 +4,7 @@ import classNames from 'classnames/bind'
 import Link from 'next/link'
 import Heading from '../Heading'
 import { Recipe } from '../../lib/types'
-import css from './RecipeItem.css'
+import css from './recipeitem.css'
 
 const cx = classNames.bind(css)
 

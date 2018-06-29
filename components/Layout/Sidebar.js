@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Panel from '../Panel'
-import css from './Layout.css'
+import css from './layout.css'
 
 const Sidebar = ({ children }) => (
   <aside className={css.sidebar}>
