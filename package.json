@@ -14,7 +14,7 @@
     "start:next": "node server.js",
     "start:uiengine": "uiengine build -s -w",
     "build": "rimraf dist out && npm-run-all build:*",
-    "build:next": "next build && next export && cp -r out/_next/static/ out/static",
+    "build:next": "next build && next export && cp -r out/_next/static out/",
     "build:uiengine": "uiengine build && cp -r dist/design-system out",
     "production": "HOST=$npm_package_config_deployment_host npm run build",
     "deploy": "$npm_package_config_deployment_command $npm_package_config_deployment_source $npm_package_config_deployment_target",
