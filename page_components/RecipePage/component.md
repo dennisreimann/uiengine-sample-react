@@ -1,14 +1,9 @@
 ---
-template: Recipe.js
+title: Recipe
 
 context:
-  title: Recipes
+  title: Porterhouse Steak
   class: uie-page uie-page--recipe
   recipe: !data /recipes/porterhouse-steak.json
-
-properties:
-  <Recipe recipe={recipe} />:
-    recipe:
-      type: Recipe
 ---
 The detail page shows the information about a specific recipe.

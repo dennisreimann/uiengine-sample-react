@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Layout, { Main } from '../components/Layout'
-import Heading from '../components/Heading'
-import RecipeItem from '../components/RecipeItem'
-import { Recipe } from '../lib/types'
-import css from './pages.css'
+import Layout, { Main } from '../../components/Layout'
+import Heading from '../../components/Heading'
+import RecipeItem from '../../components/RecipeItem'
+import { Recipe } from '../../lib/types'
+import css from '../pages.css'
 
 const RecipesPage = ({ recipes }) => (
   <Layout>

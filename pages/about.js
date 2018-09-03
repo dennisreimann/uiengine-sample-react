@@ -1,3 +1,3 @@
-import About from '../templates/About'
+import AboutPage from '../page_components/AboutPage'
 
-export default About
+export default AboutPage

@@ -1,10 +1,10 @@
-import Home from '../templates/Home'
+import HomePage from '../page_components/HomePage'
 import RecipeService from '../lib/recipe_service'
 
-Home.getInitialProps = async () => {
+HomePage.getInitialProps = async () => {
   const recipes = await RecipeService.load('index')
 
   return { recipes }
 }
 
-export default Home
+export default HomePage

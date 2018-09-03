@@ -1,7 +1,7 @@
 ---
-children:
-- home
-- recipes
-- recipe
-- about
+components:
+- HomePage
+- RecipesPage
+- RecipePage
+- AboutPage
 ---

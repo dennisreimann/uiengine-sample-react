@@ -1,8 +1,8 @@
 import React from 'react'
 import { Fragment } from 'react'
-import Layout, { Main } from '../components/Layout'
-import Heading from '../components/Heading'
-import { Recipe } from '../lib/types'
+import Layout, { Main } from '../../components/Layout'
+import Heading from '../../components/Heading'
+import { Recipe } from '../../lib/types'
 
 const generateNode = (id, num) => (
   <Fragment key={`${id}-${num}`}>

@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Layout, { Main, Sidebar } from '../components/Layout'
-import Heading from '../components/Heading'
-import RecipeItem from '../components/RecipeItem'
-import { Recipe } from '../lib/types'
-import { APP_ROUTES } from '../lib/routes'
+import Layout, { Main, Sidebar } from '../../components/Layout'
+import Heading from '../../components/Heading'
+import RecipeItem from '../../components/RecipeItem'
+import { Recipe } from '../../lib/types'
+import { APP_ROUTES } from '../../lib/routes'
 import Link from 'next/link'
-import css from './pages.css'
+import css from '../pages.css'
 
 const HomePage = ({ recipes }) => (
   <Layout>

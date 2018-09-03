@@ -1,5 +1,5 @@
 ---
-template: Recipes.js
+title: Recipes
 
 context:
   title: Recipes
@@ -13,10 +13,5 @@ context:
     - !data /recipes/nacho-salad.json
     - !data /recipes/onion-moinkballs.json
     - !data /recipes/porterhouse-steak.json
-
-properties:
-  <Recipes recipes={recipes} />:
-    recipes:
-      type: '[Recipe]'
 ---
 This page features an overview of our favorite recipes.

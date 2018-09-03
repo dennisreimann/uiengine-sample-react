@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout, { Main, Sidebar } from '../components/Layout'
-import Heading from '../components/Heading'
-import { APP_ROUTES } from '../lib/routes'
+import Layout, { Main, Sidebar } from '../../components/Layout'
+import Heading from '../../components/Heading'
+import { APP_ROUTES } from '../../lib/routes'
 
 const AboutPage = () => (
   <Layout>

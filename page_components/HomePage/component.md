@@ -1,5 +1,5 @@
 ---
-template: Home.js
+title: Home
 
 context:
   title: Home
@@ -13,10 +13,5 @@ context:
     - !data /recipes/nacho-salad.json
     - !data /recipes/onion-moinkballs.json
     - !data /recipes/porterhouse-steak.json
-
-properties:
-  <Homepage recipes={recipes} />:
-    recipes:
-      type: '[Recipe]'
 ---
 The home page features some teasers and information.

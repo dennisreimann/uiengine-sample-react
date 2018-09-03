@@ -1,11 +1,11 @@
-import Recipe from '../templates/Recipe'
+import RecipePage from '../page_components/RecipePage'
 import RecipeService from '../lib/recipe_service'
 
-Recipe.getInitialProps = async (context) => {
+RecipePage.getInitialProps = async (context) => {
   const { id } = context.query
   const recipe = await RecipeService.load(id)
 
   return { recipe }
 }
 
-export default Recipe
+export default RecipePage
