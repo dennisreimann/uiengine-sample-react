@@ -5,7 +5,7 @@ import css from './layout.css'
 
 const Sidebar = ({ children }) => (
   <aside className={css.sidebar}>
-    <Panel title="Opening Hours" className={css.panel}>
+    <Panel title='Opening Hours' className={css.panel}>
       <p>
         <strong>Mon – Wed</strong> 8 am – 10 pm
         <br />
@@ -15,7 +15,7 @@ const Sidebar = ({ children }) => (
       </p>
     </Panel>
 
-    <Panel title="In the loop" className={css.panel}>
+    <Panel title='In the loop' className={css.panel}>
       <p>
         Join our exclusive mailinglist to get updates and
         information regarding our menus!
@@ -32,7 +32,7 @@ Sidebar.propTypes = {
    */
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
+    PropTypes.node
   ])
 }
 

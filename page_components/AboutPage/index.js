@@ -7,16 +7,16 @@ const AboutPage = () => (
   <Layout>
     <Main>
       <section>
-        <Heading title="About Tasty BBQ" />
+        <Heading title='About Tasty BBQ' />
         <p>
-          This is a sample project to showcase the basic functionality provided by the <a href="https://github.com/dennisreimann/uiengine">UIengine</a>.
+          This is a sample project to showcase the basic functionality provided by the <a href='https://github.com/dennisreimann/uiengine'>UIengine</a>.
           This website is built with React and Next.js.
           Also see the <a href={APP_ROUTES.designsystem}>corresponding design system</a> documentation, built with the UIengine.
         </p>
         <p>
-          You can check out the <a href="https://github.com/dennisreimann/uiengine-sample-react">source code on GitHub</a>.
+          You can check out the <a href='https://github.com/dennisreimann/uiengine-sample-react'>source code on GitHub</a>.
         </p>
-        <Heading level={2} title="Tasty information" />
+        <Heading level={2} title='Tasty information' />
         <p>
           Spicy jalapeno bacon ipsum dolor amet turducken doner shankle pancetta,
           pastrami bresaola fatback pig ball tip. Swine picanha bacon shank pork

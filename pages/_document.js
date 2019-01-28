@@ -6,9 +6,8 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Tasty BBQ – homemade • best in town • yummy</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link rel="stylesheet" href="/_next/static/style.css" />
+          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+          <link rel='stylesheet' href='/_next/static/style.css' />
           <script dangerouslySetInnerHTML={{
             __html: `window.App = ${JSON.stringify({ HOST: APP_HOST })}`
           }}

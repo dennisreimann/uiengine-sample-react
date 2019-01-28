@@ -16,9 +16,7 @@ module.exports = {
   source: {
     components: ['./components', './page_components'],
     templates: './templates',
-    pages: './uiengine/pages',
-    entities: './uiengine/entities',
-    data: './static/api'
+    pages: './patternlib'
   },
 
   // Destination paths for the generated output.

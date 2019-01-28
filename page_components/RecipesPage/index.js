@@ -9,7 +9,7 @@ import css from '../pages.css'
 const RecipesPage = ({ recipes }) => (
   <Layout>
     <Main>
-      <Heading title="Recipes" />
+      <Heading title='Recipes' />
       <section className={css.recipes}>
         {recipes.map(recipe => (<RecipeItem recipe={recipe} key={recipe.id} />))}
       </section>

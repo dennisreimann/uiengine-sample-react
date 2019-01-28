@@ -36,10 +36,10 @@ const Navbar = ({ className }) => (
     <RoutesContext.Consumer>
       {routes => (
         <div className={css.wrap}>
-          <NavLink route={routes.home} title="Home" />
-          <NavLink route={routes.recipes} title="Recipes" />
-          <NavLink route={routes.about} title="About" />
-          <a href={routes.designsystem} target="uiengine" className={cx(['link'])}>Design System</a>
+          <NavLink route={routes.home} title='Home' />
+          <NavLink route={routes.recipes} title='Recipes' />
+          <NavLink route={routes.about} title='About' />
+          <a href={routes.designsystem} target='uiengine' className={cx(['link'])}>Design System</a>
         </div>
       )}
     </RoutesContext.Consumer>

@@ -1,6 +1,4 @@
 import React from 'react'
 import Footer from '..'
 
-export default (props) => (
-  <Footer />
-)
+export default props => <Footer {...props} />

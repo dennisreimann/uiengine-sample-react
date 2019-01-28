@@ -1,6 +1,4 @@
 import React from 'react'
 import HomePage from '..'
 
-export default (props) => (
-  <HomePage {...props} />
-)
+export default props => <HomePage {...props} />

@@ -12,19 +12,21 @@ const HomePage = ({ recipes }) => (
   <Layout>
     <Main>
       <section>
-        <Heading title="Welcome to Tasty BBQ" />
+        <Heading title='Welcome to Tasty BBQ' />
         <p>
-          This is a sample project to showcase the basic functionality provided by the <a href="https://github.com/dennisreimann/uiengine">UIengine</a>.
+          This is a sample project to showcase the basic functionality provided by the <a href='https://github.com/dennisreimann/uiengine'>UIengine</a>.
           This website is built with React and Next.js.
           Also see the <a href={APP_ROUTES.designsystem}>corresponding design system</a> documentation, built with the UIengine.
         </p>
         <p>
-          You can check out the <a href="https://github.com/dennisreimann/uiengine-sample-react">source code on GitHub</a>.
+          You can check out the <a href='https://github.com/dennisreimann/uiengine-sample-react'>source code on GitHub</a>.
         </p>
       </section>
 
       <section className={css.teasers}>
-        {recipes.map(recipe => (<RecipeItem recipe={recipe} key={recipe.id} teaser={true} />))}
+        {recipes.map(recipe => (
+          <RecipeItem recipe={recipe} key={recipe.id} teaser />
+        ))}
       </section>
 
       <section>
@@ -39,7 +41,7 @@ const HomePage = ({ recipes }) => (
           </Link>
         </p>
 
-        <Heading level={2} title="Learn more" />
+        <Heading level={2} title='Learn more' />
         <p>
           Bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola
           fatback pig ball tip. Swine picanha bacon shank pork chop turducken tail

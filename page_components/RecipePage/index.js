@@ -1,5 +1,4 @@
-import React from 'react'
-import { Fragment } from 'react'
+import React, { Fragment } from 'react'
 import Layout, { Main } from '../../components/Layout'
 import Heading from '../../components/Heading'
 import { Recipe } from '../../lib/types'
@@ -15,7 +14,7 @@ const generateNode = (id, num) => (
     <figure>
       <img src={`/static/images/recipes/${id}/${num}.jpg`} alt='Bacon ipsum' />
     </figure>
-    {num == 2 ? <Heading level={2} title="Pastrami bresaola fatback" /> : null}
+    {num === 2 ? <Heading level={2} title='Pastrami bresaola fatback' /> : null}
     <p>
       Biltong pork belly meatloaf ham, chicken bacon drumstick alcatra shoulder
       strip steak. Short ribs meatloaf biltong salami.Bacon ipsum dolor amet
