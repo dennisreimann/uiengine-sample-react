@@ -16,17 +16,8 @@
     "build": "rimraf dist out && npm-run-all build:*",
     "build:next": "next build && next export && cp -r out/_next/static out/",
     "build:uiengine": "uiengine build && cp -r dist/design-system out",
-    "production": "HOST=$npm_package_config_deployment_host npm run build",
-    "deploy": "$npm_package_config_deployment_command $npm_package_config_deployment_source $npm_package_config_deployment_target",
+    "production": "HOST=https://uiengine-sample-react.uix.space npm run build",
     "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
-  },
-  "config": {
-    "deployment": {
-      "host": "https://uiengine-sample-react.uix.space",
-      "command": "rsync -ravzulO --chmod=u=rwX,g=rX --delete-after",
-      "source": "lib/deploy/ out/",
-      "target": "uiengine@uiengine-sample-react.uix.space:virtual/uiengine-sample-react.uix.space"
-    }
   },
   "keywords": [
     "uiengine",
