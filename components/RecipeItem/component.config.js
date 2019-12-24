@@ -4,7 +4,7 @@ module.exports = {
       file: 'Default.js',
       description: 'The default recipe item should be used in overview lists.',
       context: {
-        recipe: require('../../static/api/recipes/gyros')
+        recipe: require('../../pages/api/recipes/gyros')
       }
     },
     {
@@ -12,7 +12,7 @@ module.exports = {
       description:
         'Use the teaser when you want to display one or a few recipes prominently, like on the homepage.',
       context: {
-        recipe: require('../../static/api/recipes/burnt-ends')
+        recipe: require('../../pages/api/recipes/burnt-ends')
       }
     }
   ]

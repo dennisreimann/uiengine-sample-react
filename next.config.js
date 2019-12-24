@@ -1,5 +1,5 @@
 const withCSS = require('@zeit/next-css')
-const recipes = require('./static/api/recipes')
+const recipes = require('./pages/api/recipes/index.json')
 
 const paths = {
   '/': { page: '/' },

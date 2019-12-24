@@ -1,4 +1,4 @@
-import App, {Container} from 'next/app'
+import App from 'next/app'
 import Head from 'next/head'
 import React from 'react'
 
@@ -15,11 +15,11 @@ export default class MyApp extends App {
 
   render () {
     const {Component, pageProps} = this.props
-    return <Container>
+    return <>
       <Head>
         <title>Tasty BBQ – homemade • best in town • yummy</title>
       </Head>
       <Component {...pageProps} />
-    </Container>
+    </>
   }
 }

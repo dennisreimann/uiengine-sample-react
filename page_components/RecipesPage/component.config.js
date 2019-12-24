@@ -4,14 +4,14 @@ module.exports = {
     title: 'Recipes',
     class: 'uie-page uie-page--recipes',
     recipes: [
-      require('../../static/api/recipes/bacon-wrapped-chicken-breasts'),
-      require('../../static/api/recipes/beer-can-chicken'),
-      require('../../static/api/recipes/burgers'),
-      require('../../static/api/recipes/burnt-ends'),
-      require('../../static/api/recipes/gyros'),
-      require('../../static/api/recipes/nacho-salad'),
-      require('../../static/api/recipes/onion-moinkballs'),
-      require('../../static/api/recipes/porterhouse-steak')
+      require('../../pages/api/recipes/bacon-wrapped-chicken-breasts'),
+      require('../../pages/api/recipes/beer-can-chicken'),
+      require('../../pages/api/recipes/burgers'),
+      require('../../pages/api/recipes/burnt-ends'),
+      require('../../pages/api/recipes/gyros'),
+      require('../../pages/api/recipes/nacho-salad'),
+      require('../../pages/api/recipes/onion-moinkballs'),
+      require('../../pages/api/recipes/porterhouse-steak')
     ]
   }
 }

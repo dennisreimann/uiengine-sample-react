@@ -66,7 +66,7 @@ module.exports = {
     base: '/design-system/',
     lang: 'en',
     hljs: 'gruvbox-dark',
-    customStylesFile: '/static/styles/uiengine-customizations.css',
+    customStylesFile: '/styles/uiengine-customizations.css',
     breakpoints: {
       S: 360,
       M: 640,
@@ -92,9 +92,9 @@ module.exports = {
     server: {
       baseDir: './dist/'
     },
-    serveStatic: [{
-      route: '/static',
-      dir: ['./static', './dist/static']
-    }]
+    serveStatic: [
+      './public',
+      './dist/static'
+    ]
   }
 }

@@ -1,5 +1,5 @@
 module.exports = {
   context: {
-    recipe: require('../../static/api/recipes/beer-can-chicken')
+    recipe: require('../../pages/api/recipes/beer-can-chicken')
   }
 }

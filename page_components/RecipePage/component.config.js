@@ -3,6 +3,6 @@ module.exports = {
   context: {
     title: 'Porterhouse Steak',
     class: 'uie-page uie-page--recipe',
-    recipe: require('../../static/api/recipes/porterhouse-steak')
+    recipe: require('../../pages/api/recipes/porterhouse-steak')
   }
 }

@@ -6,7 +6,7 @@ import css from './icon.css'
 const Icon = props => (
   <img
     className={classNames([css.icon, props.className])}
-    src={`/static/icons/${props.symbol}.svg`}
+    src={`/icons/${props.symbol}.svg`}
     alt={props.symbol}
   />
 )

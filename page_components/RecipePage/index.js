@@ -12,7 +12,7 @@ const generateNode = (id, num) => (
       drumstick alcatra shoulder strip steak. Short ribs meatloaf biltong salami.
     </p>
     <figure>
-      <img src={`/static/images/recipes/${id}/${num}.jpg`} alt='Bacon ipsum' />
+      <img src={`/images/recipes/${id}/${num}.jpg`} alt='Bacon ipsum' />
     </figure>
     {num === 2 ? <Heading level={2} title='Pastrami bresaola fatback' /> : null}
     <p>

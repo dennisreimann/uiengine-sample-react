@@ -12,7 +12,7 @@ const RecipeItem = props => {
   const { recipe, teaser } = props
   const className = cx([{ recipeItem: !teaser }, { recipeTeaser: teaser }])
   const href = recipe.url || `/recipe?id=${recipe.id}`
-  const previewSrc = recipe.previewUrl || `/static/images/recipes/${recipe.id}/preview.jpg`
+  const previewSrc = recipe.previewUrl || `/images/recipes/${recipe.id}/preview.jpg`
 
   return (
     <div className={className}>
