@@ -25,6 +25,11 @@ jobs:
     - name: Build
       run: |
         npm run production
+        # GitHub Pages SPA
+        cp deploy/404.html out/404.html
+        cp deploy/gh-pages-spa.js out/gh-pages-spa.js
+        sed '7i\'$'\n''<script src="/gh-pages-spa.js"></script>'$'\n' out/design-system/index.html > out/design-system/index-modified.html
+        mv out/design-system/index{-modified,}.html
         # https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
         touch out/.nojekyll
         # https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site
