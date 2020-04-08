@@ -29,13 +29,13 @@
     "classnames": "^2.2.6",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.2.1",
+    "next": "^9.3.4",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
+    "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
@@ -45,17 +45,17 @@
     "@babel/plugin-proposal-throw-expressions": "^7.8.3",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-syntax-import-meta": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-react": "^7.8.3",
-    "@babel/register": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.9.0",
     "@uiengine/adapter-html": "^2.6.0",
     "@uiengine/adapter-react": "^2.4.0",
-    "@uiengine/core": "^2.6.0",
-    "ajv": "^6.11.0",
+    "@uiengine/core": "^2.6.1",
+    "ajv": "^6.12.0",
     "babel-plugin-css-modules-transform": "^1.6.2",
     "html-sketchapp-cli": "0.6.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.26",
-    "rimraf": "^3.0.0"
+    "postcss": "^7.0.27",
+    "rimraf": "^3.0.2"
   }
 }
