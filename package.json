@@ -17,7 +17,9 @@
     "build:next": "next build && next export && cp -r out/_next/static out/",
     "build:uiengine": "uiengine build && cp -r dist/design-system out",
     "production": "HOST=https://uiengine-sample-react.uix.space npm run build",
-    "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
+    "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "uiengine",
@@ -32,7 +34,8 @@
     "next": "^9.3.6",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -57,5 +60,6 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.27",
     "rimraf": "^3.0.2"
-  }
+  },
+  "snyk": true
 }
