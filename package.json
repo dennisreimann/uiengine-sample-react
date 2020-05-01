@@ -16,8 +16,7 @@
     "build": "rimraf dist out && npm-run-all build:*",
     "build:next": "next build && next export && cp -r out/_next/static out/",
     "build:uiengine": "uiengine build && cp -r dist/design-system out",
-    "production": "HOST=https://uiengine-sample-react.uix.space npm run build",
-    "sketch": "rimraf sketch && html-sketchapp --config html-sketchapp.config.js && open -a Sketch"
+    "production": "HOST=https://uiengine-sample-react.uix.space npm run build"
   },
   "keywords": [
     "uiengine",
@@ -35,7 +34,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
@@ -45,17 +44,18 @@
     "@babel/plugin-proposal-throw-expressions": "^7.8.3",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-syntax-import-meta": "^7.8.3",
-    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
     "@uiengine/adapter-html": "^3.0.0",
     "@uiengine/adapter-react": "^2.4.0",
     "@uiengine/core": "^3.0.1",
+    "acorn": "^7.1.1",
     "ajv": "^6.12.2",
     "babel-plugin-css-modules-transform": "^1.6.2",
-    "html-sketchapp-cli": "0.6.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.27",
     "rimraf": "^3.0.2"
-  }
+  },
+  "snyk": false
 }
