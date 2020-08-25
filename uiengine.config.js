@@ -4,6 +4,7 @@ module.exports = {
   // For a detailed documentation of all the options in here see
   // https://github.com/dennisreimann/uiengine/blob/master/docs/config.md
   name: 'Tasty BBQ',
+  logo: '/images/uiengine-intro.png',
   copyright: 'Copyright © Dennis Reimann. <a href="https://github.com/dennisreimann/uiengine">Generated with UIengine</a>.',
   debug: true,
 

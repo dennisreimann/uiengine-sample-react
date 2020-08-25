@@ -1,30 +1,29 @@
 :root {
-  --uie-color-accent-extralight: #F3A379;
-  --uie-color-accent-light: #ff9160;
+  --uie-color-accent-ultralight: #F3A379;
+  --uie-color-accent-light: #cc5926;
   --uie-color-accent-medium: #C68362;
-  --uie-color-accent-middark: #AB7255;
   --uie-color-accent-dark: #583f48;
-  --uie-color-accent-extradark: #332B2E;
+  --uie-color-accent-ultradark: #332B2E;
 
-  --uie-color-bg-light: #ebebeb;
-  --uie-color-bg-medium: #dedcdc;
-}
+  --uie-color-neutral-10: #f9f2ef;
+  --uie-color-neutral-20: #faf5f3;
+  --uie-color-neutral-30: #e7d8d1;
+  --uie-color-neutral-50: var(--uie-color-accent-medium);
+  --uie-color-neutral-70: #9f5937;
+  --uie-color-neutral-80: #864220;
+  --uie-color-neutral-90: #531d03;
 
-.uie-tokens,
-.uie-variant:not(.uie-variant--Layout) {
-  background: var(--color-white);
+  --uie-color-navigation-text-hover: var(--uie-color-accent-ultradark);
 }
 
 .uie-variant--Icon,
-.uie .uie-icon-token__value--icon {
-  padding-top: var(--uie-space-s) !important;
-  padding-left: var(--uie-space-m) !important;
-  background-color: var(--uie-color-bg-medium) !important;
+.uie .uie-icon-token__icon {
+  background-color: var(--uie-color-neutral-30) !important;
 }
 
 .uie-variant--Icon img,
 .uie-variant--Socialbar img,
-.uie .uie-icon-token__value--icon img {
+.uie .uie-icon-token__icon img {
   width: 30px;
   height: 30px;
 }
