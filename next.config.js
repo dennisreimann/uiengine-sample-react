@@ -13,6 +13,7 @@ recipes.forEach(({ id }) => {
 
 module.exports = withCSS({
   cssModules: true,
+  trailingSlash: true,
   distDir: 'dist',
   exportPathMap: defaultPathMap => paths
 })

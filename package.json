@@ -14,7 +14,7 @@
     "start:next": "node server.js",
     "start:uiengine": "sleep 5 && uiengine build -s -w",
     "build": "rimraf dist out && npm-run-all build:*",
-    "build:next": "next build && next export && cp -r out/_next/static out/",
+    "build:next": "next build && next export && cp -r out/_next/static/* out/ && cp out/css/styles* out/css/styles.chunk.css",
     "build:uiengine": "uiengine build && cp -r dist/design-system out",
     "production": "HOST=https://uiengine-sample-react.uix.space npm run build"
   },
