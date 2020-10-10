@@ -1,0 +1,1973 @@
+{
+  "config": {
+    "name": "Tasty BBQ",
+    "version": "2.0.0",
+    "update": 1602349673702,
+    "logo": "/images/uiengine-intro.png",
+    "copyright": "Copyright © Dennis Reimann. <a href=\"https://github.com/dennisreimann/uiengine\">Generated with UIengine</a>.",
+    "debug": true,
+    "source": {
+      "components": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components"
+      ],
+      "templates": "/home/runner/work/uiengine-sample-react/uiengine-sample-react/templates",
+      "pages": "/home/runner/work/uiengine-sample-react/uiengine-sample-react/patternlib",
+      "base": "/home/runner/work/uiengine-sample-react/uiengine-sample-react",
+      "configFile": "/home/runner/work/uiengine-sample-react/uiengine-sample-react/uiengine.config.js"
+    },
+    "target": "/home/runner/work/uiengine-sample-react/uiengine-sample-react/dist/design-system",
+    "adapters": {
+      "html": {
+        "module": "@uiengine/adapter-html",
+        "options": {}
+      },
+      "css": {
+        "module": "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/uiengine/css.js",
+        "options": {}
+      },
+      "js": {
+        "module": "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/uiengine/react.js",
+        "options": {
+          "babelRegisterModule": "@babel/register",
+          "babel": {
+            "presets": [
+              "@babel/preset-env",
+              "@babel/preset-react"
+            ],
+            "plugins": [
+              [
+                "css-modules-transform",
+                {
+                  "generateScopedName": "[hash:base64]"
+                }
+              ],
+              [
+                "@babel/plugin-proposal-decorators",
+                {
+                  "legacy": true
+                }
+              ],
+              "@babel/plugin-proposal-class-properties",
+              "@babel/plugin-proposal-export-namespace-from",
+              "@babel/plugin-proposal-function-sent",
+              "@babel/plugin-proposal-json-strings",
+              "@babel/plugin-proposal-numeric-separator",
+              "@babel/plugin-proposal-throw-expressions",
+              "@babel/plugin-syntax-dynamic-import",
+              "@babel/plugin-syntax-import-meta"
+            ]
+          }
+        }
+      }
+    },
+    "template": "uiengine.html",
+    "ui": {
+      "base": "/design-system/",
+      "lang": "en",
+      "hljs": "gruvbox-dark",
+      "customStylesFile": "/styles/uiengine-customizations.css",
+      "breakpoints": {
+        "S": 360,
+        "M": 640,
+        "L": 960,
+        "XL": 1280
+      },
+      "viewports": {
+        "Phone": {
+          "width": 360
+        },
+        "Tablet": {
+          "width": 768
+        },
+        "Desktop": {
+          "width": 1280
+        }
+      }
+    },
+    "browserSync": {
+      "port": 4000,
+      "open": false,
+      "server": {
+        "baseDir": "./dist/"
+      },
+      "serveStatic": [
+        "./public",
+        "./dist/static"
+      ]
+    },
+    "themes": [
+      {
+        "id": "_default",
+        "title": "Default"
+      }
+    ],
+    "plugins": []
+  },
+  "plugins": {
+    "ui": {
+      "js": [],
+      "css": [],
+      "tabs": [],
+      "actions": [],
+      "iframe_js": []
+    }
+  },
+  "pages": {
+    "index": {
+      "childIds": [
+        "foundation",
+        "components",
+        "prototype"
+      ],
+      "id": "index",
+      "title": "Home",
+      "isTitleFromHeading": false,
+      "path": "",
+      "sourcePath": "patternlib",
+      "sourceFile": "patternlib/page.config.js",
+      "readmeFile": "patternlib/README.md",
+      "type": "documentation",
+      "content": "<div style=\"text-align:center\">\n  <p>Welcome to the</p>\n  <img src=\"/images/uiengine-intro.png\" alt=\"Tasty BBQ User Interface Guidelines\" style=\"max-width:400px;margin:2em 0;\" />\n  <p>This is a sample project to showcase the basic functionality provided by the <a href=\"https://github.com/dennisreimann/uiengine\">UIengine</a>.</p>\n  <p>Also see the <a href=\"/\">corresponding website</a>, built with React and Next.js.</p>\n  <p>You can check out the <a href=\"https://github.com/dennisreimann/uiengine-sample-react\">source code on GitHub</a>.</p>\n</div>"
+    },
+    "components": {
+      "childIds": [
+        "components/elements",
+        "components/modules"
+      ],
+      "id": "components",
+      "title": "Components",
+      "isTitleFromHeading": true,
+      "path": "components",
+      "sourcePath": "patternlib/components",
+      "readmeFile": "patternlib/components/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"components\">Components</h1>"
+    },
+    "foundation": {
+      "childIds": [
+        "foundation/colors",
+        "foundation/fonts",
+        "foundation/icons",
+        "foundation/spaces"
+      ],
+      "id": "foundation",
+      "title": "Foundation",
+      "isTitleFromHeading": true,
+      "path": "foundation",
+      "sourcePath": "patternlib/foundation",
+      "readmeFile": "patternlib/foundation/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"foundation\">Foundation</h1>"
+    },
+    "prototype": {
+      "childIds": [],
+      "componentIds": [
+        "HomePage",
+        "RecipesPage",
+        "RecipePage",
+        "AboutPage"
+      ],
+      "id": "prototype",
+      "title": "Prototype",
+      "isTitleFromHeading": false,
+      "path": "prototype",
+      "sourcePath": "patternlib/prototype",
+      "sourceFile": "patternlib/prototype/page.config.js",
+      "type": "documentation"
+    },
+    "components/elements": {
+      "childIds": [],
+      "componentIds": [
+        "Heading",
+        "Icon",
+        "Tag"
+      ],
+      "id": "components/elements",
+      "title": "Elements",
+      "isTitleFromHeading": false,
+      "path": "components/elements",
+      "sourcePath": "patternlib/components/elements",
+      "sourceFile": "patternlib/components/elements/page.config.js",
+      "readmeFile": "patternlib/components/elements/README.md",
+      "type": "documentation",
+      "content": "<p>Primitives and basic components that are used as building blocks for more complex modules.</p>"
+    },
+    "components/modules": {
+      "childIds": [],
+      "componentIds": [
+        "Panel",
+        "RecipeItem",
+        "Header",
+        "Navbar",
+        "Footer",
+        "Socialbar",
+        "Layout"
+      ],
+      "id": "components/modules",
+      "title": "Modules",
+      "isTitleFromHeading": false,
+      "path": "components/modules",
+      "sourcePath": "patternlib/components/modules",
+      "sourceFile": "patternlib/components/modules/page.config.js",
+      "type": "documentation"
+    },
+    "foundation/colors": {
+      "childIds": [],
+      "tokens": [
+        {
+          "name": "Brand",
+          "type": "category",
+          "tokens": [
+            {
+              "type": "color",
+              "name": "Brown",
+              "value": "#583f48",
+              "variable": "var(--color-brown)"
+            },
+            {
+              "type": "color",
+              "name": "Orange",
+              "value": "#ff9160",
+              "variable": "var(--color-orange)"
+            }
+          ]
+        },
+        {
+          "name": "Neutral",
+          "type": "category",
+          "tokens": [
+            {
+              "type": "color",
+              "name": "White",
+              "value": "#fff",
+              "variable": "var(--color-white)"
+            },
+            {
+              "type": "color",
+              "name": "Gray 10",
+              "value": "#ebebeb",
+              "variable": "var(--color-gray-10)"
+            },
+            {
+              "type": "color",
+              "name": "Gray 20",
+              "value": "#dedcdc",
+              "variable": "var(--color-gray-20)"
+            }
+          ]
+        }
+      ],
+      "id": "foundation/colors",
+      "title": "Colors",
+      "isTitleFromHeading": false,
+      "path": "foundation/colors",
+      "sourcePath": "patternlib/foundation/colors",
+      "sourceFile": "patternlib/foundation/colors/page.config.js",
+      "readmeFile": "patternlib/foundation/colors/README.md",
+      "type": "tokens",
+      "content": "<p>Our <a href=\"https://github.com/dennisreimann/uiengine/blob/master/docs/design-tokens.md\">colors</a>.</p>"
+    },
+    "foundation/fonts": {
+      "childIds": [],
+      "tokens": [
+        {
+          "name": "Head",
+          "type": "category",
+          "tokens": [
+            {
+              "type": "font",
+              "name": "Sanelma",
+              "fontweight": "regular / 400",
+              "license": "Mika Melvas - Standard License",
+              "variable": "var(--font-family-head)",
+              "value": "font-family: var(--font-family-head);",
+              "sizes": [
+                "5rem"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Deco",
+          "type": "category",
+          "tokens": [
+            {
+              "type": "font",
+              "name": "PH 1000 Regular",
+              "fontweight": "regular / 400",
+              "variable": "var(--font-family-deco)",
+              "value": "font-family: var(--font-family-deco);",
+              "sizes": [
+                "2rem"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Base",
+          "type": "category",
+          "tokens": [
+            {
+              "type": "font",
+              "name": "Helvetica, Arial, Tahoma, Verdana",
+              "fontweight": "regular / 400",
+              "variable": "var(--font-family-base)",
+              "value": "font-family: var(--font-family-base);",
+              "sizes": [
+                "24px",
+                "21px",
+                "14px",
+                "11px",
+                "9px"
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "foundation/fonts",
+      "title": "Fonts",
+      "isTitleFromHeading": false,
+      "path": "foundation/fonts",
+      "sourcePath": "patternlib/foundation/fonts",
+      "sourceFile": "patternlib/foundation/fonts/page.config.js",
+      "type": "tokens"
+    },
+    "foundation/icons": {
+      "childIds": [],
+      "tokens": [
+        {
+          "type": "icon",
+          "name": "Twitter",
+          "value": "<img src=\"/icons/twitter.svg\" />",
+          "usage": "<Icon symbol=\"twitter\" />",
+          "variable": "twitter"
+        },
+        {
+          "type": "icon",
+          "name": "Facebook",
+          "value": "<img src=\"/icons/facebook.svg\" />",
+          "usage": "<Icon symbol=\"facebook\" />",
+          "variable": "facebook"
+        },
+        {
+          "type": "icon",
+          "name": "Instagram",
+          "value": "<img src=\"/icons/instagram.svg\" />",
+          "usage": "<Icon symbol=\"instagram\" />",
+          "variable": "instagram"
+        },
+        {
+          "type": "icon",
+          "name": "Pinterest",
+          "value": "<img src=\"/icons/pinterest.svg\" />",
+          "usage": "<Icon symbol=\"pinterest\" />",
+          "variable": "pinterest"
+        },
+        {
+          "type": "icon",
+          "name": "YouTube",
+          "value": "<img src=\"/icons/youtube.svg\" />",
+          "usage": "<Icon symbol=\"youtube\" />",
+          "variable": "youtube"
+        }
+      ],
+      "id": "foundation/icons",
+      "title": "Icons",
+      "isTitleFromHeading": false,
+      "path": "foundation/icons",
+      "sourcePath": "patternlib/foundation/icons",
+      "sourceFile": "patternlib/foundation/icons/page.config.js",
+      "readmeFile": "patternlib/foundation/icons/README.md",
+      "type": "tokens",
+      "content": "<p>Usage as React component: <code>&lt;Icon symbol=&quot;ICON_ID&quot; /&gt;</code></p>\n<p>For details see the <a href=\"/components/elements/Icon/\">icon component page</a>.</p>"
+    },
+    "foundation/spaces": {
+      "childIds": [],
+      "tokens": [
+        {
+          "type": "size",
+          "name": "XXS",
+          "value": ".125rem"
+        },
+        {
+          "type": "size",
+          "name": "XS",
+          "value": ".25rem"
+        },
+        {
+          "type": "size",
+          "name": "S",
+          "value": ".5rem"
+        },
+        {
+          "type": "size",
+          "name": "M",
+          "value": ".75rem"
+        },
+        {
+          "type": "size",
+          "name": "L",
+          "value": "1.25rem"
+        },
+        {
+          "type": "size",
+          "name": "XL",
+          "value": "1.75rem"
+        },
+        {
+          "type": "size",
+          "name": "XL",
+          "value": "2.25rem"
+        }
+      ],
+      "id": "foundation/spaces",
+      "title": "Spaces",
+      "isTitleFromHeading": true,
+      "path": "foundation/spaces",
+      "sourcePath": "patternlib/foundation/spaces",
+      "sourceFile": "patternlib/foundation/spaces/page.config.js",
+      "readmeFile": "patternlib/foundation/spaces/README.md",
+      "type": "tokens",
+      "content": "<h1 id=\"spaces\">Spaces</h1>\n<p>Our <a href=\"https://github.com/dennisreimann/uiengine/blob/master/docs/design-tokens.md\">spacings</a>.</p>"
+    }
+  },
+  "components": {
+    "Footer": {
+      "id": "Footer",
+      "title": "Footer",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"footer\">Footer</h1>\n<p>The <code>Footer</code> contains two panels: The tagcloud and links to our friends sites.</p>",
+      "variants": [
+        {
+          "file": "Footer.js",
+          "id": "Footer/Footer.js-1",
+          "componentId": "Footer",
+          "title": "Footer",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Footer from '..'\n\nexport default props => <Footer {...props} />"
+        }
+      ],
+      "sourcePath": "components/Footer",
+      "readmeFile": "components/Footer/README.md",
+      "type": "component",
+      "properties": {
+        "<Footer>": {
+          "className": {
+            "type": "String",
+            "required": false
+          }
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Footer/variants/Footer.js"
+      ],
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Panel/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Tag/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Footer/footer.css"
+      ],
+      "dependentComponents": [
+        "Layout"
+      ],
+      "dependencies": [
+        "Panel",
+        "Tag"
+      ]
+    },
+    "Header": {
+      "id": "Header",
+      "title": "Header",
+      "isTitleFromHeading": false,
+      "content": "<p>The <code>Header</code> contains the navbar and main hero image.\nOn recipe pages it features the recipes main image in the background.</p>",
+      "variants": [
+        {
+          "file": "Default.js",
+          "id": "Header/Default.js-1",
+          "componentId": "Header",
+          "title": "Default",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Header from '..'\n\nexport default () => <Header />",
+          "context": {
+            "recipe": {
+              "id": "beer-can-chicken",
+              "title": "Beer Can Chicken",
+              "subtitle": "With a castiron pan",
+              "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+              "images": 3
+            }
+          }
+        },
+        {
+          "file": "Recipe.js",
+          "id": "Header/Recipe.js-2",
+          "componentId": "Header",
+          "title": "Recipe",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Header from '..'\n\nexport default ({ recipe }) => (\n  <Header recipe={recipe} />\n)",
+          "context": {
+            "recipe": {
+              "id": "beer-can-chicken",
+              "title": "Beer Can Chicken",
+              "subtitle": "With a castiron pan",
+              "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+              "images": 3
+            }
+          }
+        }
+      ],
+      "sourcePath": "components/Header",
+      "sourceFile": "components/Header/component.config.js",
+      "readmeFile": "components/Header/README.md",
+      "type": "component",
+      "context": {
+        "recipe": {
+          "id": "beer-can-chicken",
+          "title": "Beer Can Chicken",
+          "subtitle": "With a castiron pan",
+          "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+          "images": 3
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/variants/Recipe.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/variants/Recipe.js"
+      ],
+      "properties": {
+        "<Header>": {
+          "className": {
+            "type": "String",
+            "required": false
+          },
+          "recipe": {
+            "type": "Shape",
+            "value": {
+              "id": {
+                "type": "String",
+                "required": false
+              },
+              "title": {
+                "type": "String",
+                "required": false
+              }
+            },
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/next/link.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Navbar/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/header.css",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/routes.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/util.js"
+      ],
+      "dependentComponents": [
+        "Layout"
+      ],
+      "dependencies": [
+        "Navbar"
+      ]
+    },
+    "Heading": {
+      "id": "Heading",
+      "title": "Heading",
+      "isTitleFromHeading": false,
+      "variants": [
+        {
+          "file": "Title.js",
+          "id": "Heading/Title.js-1",
+          "componentId": "Heading",
+          "title": "Title",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Heading from '..'\n\nexport default () => (\n  <Heading title='This is the page title' />\n)"
+        },
+        {
+          "file": "Subtitle.js",
+          "id": "Heading/Subtitle.js-2",
+          "componentId": "Heading",
+          "title": "Subtitle",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Heading from '..'\n\nexport default () => (\n  <Heading title='Learn more' level={2} />\n)"
+        },
+        {
+          "file": "Deco.js",
+          "description": "This should be used for panel titles.",
+          "id": "Heading/Deco.js-3",
+          "componentId": "Heading",
+          "title": "Deco",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Heading from '..'\n\nexport default () => (\n  <Heading title='This is a decorative title' level={3} type='deco' />\n)"
+        }
+      ],
+      "sourcePath": "components/Heading",
+      "sourceFile": "components/Heading/component.config.js",
+      "type": "component",
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Panel/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/variants/Deco.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/variants/Subtitle.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/variants/Title.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Panel/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/variants/Deco.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/variants/Subtitle.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/variants/Title.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js"
+      ],
+      "properties": {
+        "<Heading>": {
+          "title": {
+            "type": "String",
+            "required": true
+          },
+          "level": {
+            "type": "Number",
+            "required": false,
+            "default": 1
+          },
+          "type": {
+            "type": "String",
+            "required": false
+          },
+          "className": {
+            "type": "String",
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/bind.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/heading.css"
+      ],
+      "dependentComponents": [
+        "Panel",
+        "RecipeItem",
+        "AboutPage",
+        "HomePage",
+        "RecipePage",
+        "RecipesPage"
+      ]
+    },
+    "Icon": {
+      "id": "Icon",
+      "title": "Icon",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"icon\">Icon</h1>\n<p>Usage as React component: <code>&lt;Icon symbol=&quot;ICON_ID&quot; /&gt;</code>.</p>\n<p>For an overview of available icons see the <a href=\"/foundation/icons/\">icon foundation page</a>.</p>",
+      "variants": [
+        {
+          "file": "Icon.js",
+          "context": {
+            "symbol": "twitter"
+          },
+          "id": "Icon/Icon.js-1",
+          "componentId": "Icon",
+          "title": "Icon",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Icon from '..'\n\nexport default ({ symbol }) => (\n  <Icon symbol={symbol} />\n)"
+        }
+      ],
+      "sourcePath": "components/Icon",
+      "sourceFile": "components/Icon/component.config.js",
+      "readmeFile": "components/Icon/README.md",
+      "type": "component",
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Icon/variants/Icon.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Icon/variants/Icon.js"
+      ],
+      "properties": {
+        "<Icon>": {
+          "symbol": {
+            "type": "String",
+            "required": true
+          },
+          "className": {
+            "type": "String",
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Icon/icon.css"
+      ],
+      "dependentComponents": [
+        "Socialbar"
+      ]
+    },
+    "Layout": {
+      "id": "Layout",
+      "title": "Layout",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"layout\">Layout</h1>\n<p>The <code>Layout</code> component provides the basic page structure.\nIt receives the main content as <code>children</code> and wraps it inside a basic layout with <code>Header</code>, <code>Socialbar</code> and <code>Footer</code>.</p>\n<p>Part of the layout are also the components <code>Main</code> and <code>Sidebar</code>, which wrap the particular content components.</p>",
+      "variants": [
+        {
+          "file": "Default.js",
+          "title": "Default (without sidebar)",
+          "description": "Standard pages like the recipes list and details do not feature a sidebar.",
+          "id": "Layout/Default.js-1",
+          "componentId": "Layout",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Layout, { Main } from '..'\n\nexport default () => (\n  <Layout>\n    <Main>\n      <p>Here goes the main content</p>\n    </Main>\n  </Layout>\n)"
+        },
+        {
+          "file": "WithSidebar.js",
+          "title": "With Sidebar",
+          "description": "The sidebar appears on the home and about page.",
+          "id": "Layout/WithSidebar.js-2",
+          "componentId": "Layout",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Layout, { Main, Sidebar } from '..'\n\nexport default () => (\n  <Layout>\n    <Main>\n      <p>Here goes the main content</p>\n    </Main>\n\n    <Sidebar />\n  </Layout>\n)"
+        }
+      ],
+      "sourcePath": "components/Layout",
+      "sourceFile": "components/Layout/component.config.js",
+      "readmeFile": "components/Layout/README.md",
+      "type": "component",
+      "properties": {
+        "<Layout>": {
+          "recipe": {
+            "type": "Shape",
+            "value": {
+              "id": {
+                "type": "String",
+                "required": false
+              },
+              "title": {
+                "type": "String",
+                "required": false
+              }
+            },
+            "required": false
+          },
+          "children": {
+            "type": "ObjectOf|ArrayOf",
+            "required": true
+          }
+        },
+        "<Main>": {
+          "children": {
+            "type": "ArrayOf|Node",
+            "required": true
+          }
+        },
+        "<Sidebar>": {
+          "children": {
+            "type": "ArrayOf|Node",
+            "required": false
+          }
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/WithSidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/WithSidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/WithSidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/WithSidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/variants/WithSidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js"
+      ],
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Footer/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Main.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Sidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/layout.css",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/layout.css",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/content.css",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Panel/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/layout.css",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Main.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Sidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js"
+      ],
+      "dependentComponents": [
+        "AboutPage",
+        "HomePage",
+        "RecipePage",
+        "RecipesPage"
+      ],
+      "dependencies": [
+        "Header",
+        "Socialbar",
+        "Footer",
+        "Panel"
+      ]
+    },
+    "Navbar": {
+      "id": "Navbar",
+      "title": "Navbar",
+      "isTitleFromHeading": false,
+      "variants": [
+        {
+          "file": "Navbar.js",
+          "id": "Navbar/Navbar.js-1",
+          "componentId": "Navbar",
+          "title": "Navbar",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Navbar from '..'\n\nexport default () => (\n  <Navbar />\n)"
+        }
+      ],
+      "sourcePath": "components/Navbar",
+      "type": "component",
+      "properties": {
+        "<Navbar>": {
+          "className": {
+            "type": "String",
+            "required": false
+          }
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Header/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Navbar/variants/Navbar.js"
+      ],
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/bind.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/routes.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/next/router.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/next/link.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Navbar/navbar.css"
+      ],
+      "dependentComponents": [
+        "Header"
+      ]
+    },
+    "Panel": {
+      "id": "Panel",
+      "title": "Panel",
+      "isTitleFromHeading": false,
+      "content": "<p>Panels should be used in the sidebar or footer to group content (i.e. opening hours or the tag cloud).</p>",
+      "variants": [
+        {
+          "file": "Panel.js",
+          "id": "Panel/Panel.js-1",
+          "componentId": "Panel",
+          "title": "Panel",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Panel from '..'\n\nexport default props => (\n  <Panel title='Here goes the panel title'>\n    <p>\n      Panels should be used in the sidebar or footer to group content (i.e. opening hours or the tag cloud).\n      The content is provided as children.\n    </p>\n  </Panel>\n)"
+        }
+      ],
+      "sourcePath": "components/Panel",
+      "readmeFile": "components/Panel/README.md",
+      "type": "component",
+      "properties": {
+        "<Panel>": {
+          "children": {
+            "type": "ArrayOf|Node",
+            "required": false
+          },
+          "className": {
+            "type": "String",
+            "required": false
+          },
+          "title": {
+            "type": "String",
+            "required": true
+          }
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Footer/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Sidebar.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Panel/variants/Panel.js"
+      ],
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Panel/panel.css",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/content.css"
+      ],
+      "dependentComponents": [
+        "Footer",
+        "Layout"
+      ],
+      "dependencies": [
+        "Heading",
+        "Layout"
+      ]
+    },
+    "RecipeItem": {
+      "id": "RecipeItem",
+      "title": "RecipeItem",
+      "isTitleFromHeading": false,
+      "content": "<p>The <code>RecipeItem</code> provides a quick impression of a recipe.\nThere are two different visual representations: The default list view and the teaser.</p>",
+      "variants": [
+        {
+          "file": "Default.js",
+          "description": "The default recipe item should be used in overview lists.",
+          "context": {
+            "recipe": {
+              "id": "gyros",
+              "title": "Gyros",
+              "abstract": "Spare ribs meatball bacon, shankle ribeye porchetta frankfurter sausage biltong turkey pork chop leberkas alcatra pork tenderloin.",
+              "images": 3
+            }
+          },
+          "id": "RecipeItem/Default.js-1",
+          "componentId": "RecipeItem",
+          "title": "Default",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport RecipeItem from '..'\n\nexport default ({recipe}) => (\n  <RecipeItem recipe={recipe} />\n)"
+        },
+        {
+          "file": "Teaser.js",
+          "description": "Use the teaser when you want to display one or a few recipes prominently, like on the homepage.",
+          "context": {
+            "recipe": {
+              "id": "burnt-ends",
+              "title": "Brisket Burnt Ends",
+              "abstract": "Venison tenderloin fatback, jowl ball tip chuck ground round. Turducken venison bresaola, shankle strip steak buffalo doner biltong short loin.",
+              "images": 4
+            }
+          },
+          "id": "RecipeItem/Teaser.js-2",
+          "componentId": "RecipeItem",
+          "title": "Teaser",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport RecipeItem from '..'\n\nexport default ({recipe}) => (\n  <RecipeItem recipe={recipe} teaser />\n)"
+        }
+      ],
+      "sourcePath": "components/RecipeItem",
+      "sourceFile": "components/RecipeItem/component.config.js",
+      "readmeFile": "components/RecipeItem/README.md",
+      "type": "component",
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/variants/Teaser.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/variants/Teaser.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/index.js"
+      ],
+      "properties": {
+        "<RecipeItem>": {
+          "recipe": {
+            "type": "Shape",
+            "value": {
+              "id": {
+                "type": "String",
+                "required": false
+              },
+              "title": {
+                "type": "String",
+                "required": false
+              }
+            },
+            "required": false
+          },
+          "isTeaser": {
+            "type": "Bool",
+            "required": false,
+            "default": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/bind.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/next/link.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/recipeitem.css"
+      ],
+      "dependentComponents": [
+        "HomePage",
+        "RecipesPage"
+      ],
+      "dependencies": [
+        "Heading"
+      ]
+    },
+    "Socialbar": {
+      "id": "Socialbar",
+      "title": "Socialbar",
+      "isTitleFromHeading": false,
+      "content": "<p>The <code>Socialbar</code> divides the main page content from the footer.\nIt is a visual separator which also includes links to our social media outlets.</p>\n<p>On recipe pages it features the recipes main image in the background.</p>",
+      "variants": [
+        {
+          "file": "Default.js",
+          "id": "Socialbar/Default.js-1",
+          "componentId": "Socialbar",
+          "title": "Default",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Socialbar from '..'\n\nexport default props => <Socialbar {...props} />",
+          "context": {
+            "recipe": {
+              "id": "burgers",
+              "title": "Grilling burgers",
+              "subtitle": "Juicy beef, kissed by the flame!",
+              "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+              "images": 3
+            }
+          }
+        },
+        {
+          "file": "Recipe.js",
+          "id": "Socialbar/Recipe.js-2",
+          "componentId": "Socialbar",
+          "title": "Recipe",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Socialbar from '..'\n\nexport default ({ recipe }) => (\n  <Socialbar recipe={recipe} />\n)",
+          "context": {
+            "recipe": {
+              "id": "burgers",
+              "title": "Grilling burgers",
+              "subtitle": "Juicy beef, kissed by the flame!",
+              "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+              "images": 3
+            }
+          }
+        }
+      ],
+      "sourcePath": "components/Socialbar",
+      "sourceFile": "components/Socialbar/component.config.js",
+      "readmeFile": "components/Socialbar/README.md",
+      "type": "component",
+      "context": {
+        "recipe": {
+          "id": "burgers",
+          "title": "Grilling burgers",
+          "subtitle": "Juicy beef, kissed by the flame!",
+          "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+          "images": 3
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/variants/Recipe.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/Layout.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/variants/Default.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/variants/Recipe.js"
+      ],
+      "properties": {
+        "<SocialBar>": {
+          "recipe": {
+            "type": "Shape",
+            "value": {
+              "id": {
+                "type": "String",
+                "required": false
+              },
+              "title": {
+                "type": "String",
+                "required": false
+              }
+            },
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Icon/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/util.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Socialbar/socialbar.css"
+      ],
+      "dependentComponents": [
+        "Layout"
+      ],
+      "dependencies": [
+        "Icon"
+      ]
+    },
+    "Tag": {
+      "id": "Tag",
+      "title": "Tag",
+      "isTitleFromHeading": false,
+      "variants": [
+        {
+          "file": "Tag.js",
+          "context": {
+            "title": "BBQ"
+          },
+          "id": "Tag/Tag.js-1",
+          "componentId": "Tag",
+          "title": "Tag",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport Tag from '..'\n\nexport default ({ title }) => (\n  <Tag title={title} />\n)"
+        }
+      ],
+      "sourcePath": "components/Tag",
+      "sourceFile": "components/Tag/component.config.js",
+      "type": "component",
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Footer/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Tag/variants/Tag.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Footer/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Tag/variants/Tag.js"
+      ],
+      "properties": {
+        "<Tag>": {
+          "title": {
+            "type": "String",
+            "required": true
+          },
+          "className": {
+            "type": "String",
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/classnames/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Tag/tag.css"
+      ],
+      "dependentComponents": [
+        "Footer"
+      ]
+    },
+    "AboutPage": {
+      "id": "AboutPage",
+      "title": "About",
+      "content": "<p>The about page contains further information about us.</p>",
+      "variants": [
+        {
+          "file": "AboutPage.js",
+          "id": "AboutPage/AboutPage.js-1",
+          "componentId": "AboutPage",
+          "title": "AboutPage",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport AboutPage from '..'\n\nexport default props => <AboutPage {...props} />",
+          "context": {
+            "title": "About",
+            "class": "uie-page uie-page--about"
+          }
+        }
+      ],
+      "sourcePath": "page_components/AboutPage",
+      "sourceFile": "page_components/AboutPage/component.config.js",
+      "readmeFile": "page_components/AboutPage/README.md",
+      "type": "component",
+      "context": {
+        "title": "About",
+        "class": "uie-page uie-page--about"
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/variants/AboutPage.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/AboutPage/variants/AboutPage.js"
+      ],
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/routes.js"
+      ],
+      "dependencies": [
+        "Layout",
+        "Heading"
+      ]
+    },
+    "HomePage": {
+      "id": "HomePage",
+      "title": "Home",
+      "content": "<p>The home page features some teasers and information.</p>",
+      "variants": [
+        {
+          "file": "HomePage.js",
+          "id": "HomePage/HomePage.js-1",
+          "componentId": "HomePage",
+          "title": "HomePage",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport HomePage from '..'\n\nexport default props => <HomePage {...props} />",
+          "context": {
+            "title": "Home",
+            "class": "uie-page uie-page--home",
+            "recipes": [
+              {
+                "id": "bacon-wrapped-chicken-breasts",
+                "title": "Bacon-wrapped Chicken Breasts",
+                "subtitle": "Because everything becomes better with bacon!",
+                "abstract": "Spicy jalapeno bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola fatback pig ball tip.",
+                "images": 4
+              },
+              {
+                "id": "beer-can-chicken",
+                "title": "Beer Can Chicken",
+                "subtitle": "With a castiron pan",
+                "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+                "images": 3
+              },
+              {
+                "id": "burgers",
+                "title": "Grilling burgers",
+                "subtitle": "Juicy beef, kissed by the flame!",
+                "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+                "images": 3
+              },
+              {
+                "id": "burnt-ends",
+                "title": "Brisket Burnt Ends",
+                "abstract": "Venison tenderloin fatback, jowl ball tip chuck ground round. Turducken venison bresaola, shankle strip steak buffalo doner biltong short loin.",
+                "images": 4
+              },
+              {
+                "id": "gyros",
+                "title": "Gyros",
+                "abstract": "Spare ribs meatball bacon, shankle ribeye porchetta frankfurter sausage biltong turkey pork chop leberkas alcatra pork tenderloin.",
+                "images": 3
+              },
+              {
+                "id": "nacho-salad",
+                "title": "Nacho Salad",
+                "subtitle": "Beware, it's hot!",
+                "abstract": "Pork loin pork meatloaf short loin bacon. Capicola bacon short ribs jowl. Pork corned beef brisket venison, filet mignon tongue ham leberkas chuck short ribs short loin ground round shankle.",
+                "images": 3
+              },
+              {
+                "id": "onion-moinkballs",
+                "title": "Onion Moinkballs",
+                "abstract": "Swine picanha bacon shank pork chop turducken tail tongue pork loin burgdoggen. Biltong pork belly meatloaf ham, chicken bacon drumstick alcatra shoulder strip steak.",
+                "images": 2
+              },
+              {
+                "id": "porterhouse-steak",
+                "title": "Porterhouse Steak",
+                "subtitle": "Ma, wow, look at that!",
+                "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+                "images": 4
+              }
+            ]
+          }
+        }
+      ],
+      "sourcePath": "page_components/HomePage",
+      "sourceFile": "page_components/HomePage/component.config.js",
+      "readmeFile": "page_components/HomePage/README.md",
+      "type": "component",
+      "context": {
+        "title": "Home",
+        "class": "uie-page uie-page--home",
+        "recipes": [
+          {
+            "id": "bacon-wrapped-chicken-breasts",
+            "title": "Bacon-wrapped Chicken Breasts",
+            "subtitle": "Because everything becomes better with bacon!",
+            "abstract": "Spicy jalapeno bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola fatback pig ball tip.",
+            "images": 4
+          },
+          {
+            "id": "beer-can-chicken",
+            "title": "Beer Can Chicken",
+            "subtitle": "With a castiron pan",
+            "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+            "images": 3
+          },
+          {
+            "id": "burgers",
+            "title": "Grilling burgers",
+            "subtitle": "Juicy beef, kissed by the flame!",
+            "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+            "images": 3
+          },
+          {
+            "id": "burnt-ends",
+            "title": "Brisket Burnt Ends",
+            "abstract": "Venison tenderloin fatback, jowl ball tip chuck ground round. Turducken venison bresaola, shankle strip steak buffalo doner biltong short loin.",
+            "images": 4
+          },
+          {
+            "id": "gyros",
+            "title": "Gyros",
+            "abstract": "Spare ribs meatball bacon, shankle ribeye porchetta frankfurter sausage biltong turkey pork chop leberkas alcatra pork tenderloin.",
+            "images": 3
+          },
+          {
+            "id": "nacho-salad",
+            "title": "Nacho Salad",
+            "subtitle": "Beware, it's hot!",
+            "abstract": "Pork loin pork meatloaf short loin bacon. Capicola bacon short ribs jowl. Pork corned beef brisket venison, filet mignon tongue ham leberkas chuck short ribs short loin ground round shankle.",
+            "images": 3
+          },
+          {
+            "id": "onion-moinkballs",
+            "title": "Onion Moinkballs",
+            "abstract": "Swine picanha bacon shank pork chop turducken tail tongue pork loin burgdoggen. Biltong pork belly meatloaf ham, chicken bacon drumstick alcatra shoulder strip steak.",
+            "images": 2
+          },
+          {
+            "id": "porterhouse-steak",
+            "title": "Porterhouse Steak",
+            "subtitle": "Ma, wow, look at that!",
+            "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+            "images": 4
+          }
+        ]
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/variants/HomePage.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/HomePage/variants/HomePage.js"
+      ],
+      "properties": {
+        "<HomePage>": {
+          "recipes": {
+            "type": "Array",
+            "value": {
+              "type": "Shape",
+              "value": {
+                "id": {
+                  "type": "String",
+                  "required": false
+                },
+                "title": {
+                  "type": "String",
+                  "required": false
+                }
+              }
+            },
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/routes.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/next/link.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/pages.css"
+      ],
+      "dependencies": [
+        "Layout",
+        "Heading",
+        "RecipeItem"
+      ]
+    },
+    "RecipePage": {
+      "id": "RecipePage",
+      "title": "Recipe",
+      "content": "<p>The detail page shows the information about a specific recipe.</p>",
+      "variants": [
+        {
+          "file": "RecipePage.js",
+          "id": "RecipePage/RecipePage.js-1",
+          "componentId": "RecipePage",
+          "title": "RecipePage",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport RecipePage from '..'\n\nexport default props => <RecipePage {...props} />",
+          "context": {
+            "title": "Porterhouse Steak",
+            "class": "uie-page uie-page--recipe",
+            "recipe": {
+              "id": "porterhouse-steak",
+              "title": "Porterhouse Steak",
+              "subtitle": "Ma, wow, look at that!",
+              "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+              "images": 4
+            }
+          }
+        }
+      ],
+      "sourcePath": "page_components/RecipePage",
+      "sourceFile": "page_components/RecipePage/component.config.js",
+      "readmeFile": "page_components/RecipePage/README.md",
+      "type": "component",
+      "context": {
+        "title": "Porterhouse Steak",
+        "class": "uie-page uie-page--recipe",
+        "recipe": {
+          "id": "porterhouse-steak",
+          "title": "Porterhouse Steak",
+          "subtitle": "Ma, wow, look at that!",
+          "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+          "images": 4
+        }
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/variants/RecipePage.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipePage/variants/RecipePage.js"
+      ],
+      "properties": {
+        "<RecipePage>": {
+          "recipe": {
+            "type": "Shape",
+            "value": {
+              "id": {
+                "type": "String",
+                "required": false
+              },
+              "title": {
+                "type": "String",
+                "required": false
+              }
+            },
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js"
+      ],
+      "dependencies": [
+        "Layout",
+        "Heading"
+      ]
+    },
+    "RecipesPage": {
+      "id": "RecipesPage",
+      "title": "Recipes",
+      "content": "<p>This page features an overview of our favorite recipes.</p>",
+      "variants": [
+        {
+          "file": "RecipesPage.js",
+          "id": "RecipesPage/RecipesPage.js-1",
+          "componentId": "RecipesPage",
+          "title": "RecipesPage",
+          "extension": "js",
+          "raw": "import React from 'react'\nimport RecipesPage from '..'\n\nexport default props => <RecipesPage {...props} />",
+          "context": {
+            "title": "Recipes",
+            "class": "uie-page uie-page--recipes",
+            "recipes": [
+              {
+                "id": "bacon-wrapped-chicken-breasts",
+                "title": "Bacon-wrapped Chicken Breasts",
+                "subtitle": "Because everything becomes better with bacon!",
+                "abstract": "Spicy jalapeno bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola fatback pig ball tip.",
+                "images": 4
+              },
+              {
+                "id": "beer-can-chicken",
+                "title": "Beer Can Chicken",
+                "subtitle": "With a castiron pan",
+                "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+                "images": 3
+              },
+              {
+                "id": "burgers",
+                "title": "Grilling burgers",
+                "subtitle": "Juicy beef, kissed by the flame!",
+                "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+                "images": 3
+              },
+              {
+                "id": "burnt-ends",
+                "title": "Brisket Burnt Ends",
+                "abstract": "Venison tenderloin fatback, jowl ball tip chuck ground round. Turducken venison bresaola, shankle strip steak buffalo doner biltong short loin.",
+                "images": 4
+              },
+              {
+                "id": "gyros",
+                "title": "Gyros",
+                "abstract": "Spare ribs meatball bacon, shankle ribeye porchetta frankfurter sausage biltong turkey pork chop leberkas alcatra pork tenderloin.",
+                "images": 3
+              },
+              {
+                "id": "nacho-salad",
+                "title": "Nacho Salad",
+                "subtitle": "Beware, it's hot!",
+                "abstract": "Pork loin pork meatloaf short loin bacon. Capicola bacon short ribs jowl. Pork corned beef brisket venison, filet mignon tongue ham leberkas chuck short ribs short loin ground round shankle.",
+                "images": 3
+              },
+              {
+                "id": "onion-moinkballs",
+                "title": "Onion Moinkballs",
+                "abstract": "Swine picanha bacon shank pork chop turducken tail tongue pork loin burgdoggen. Biltong pork belly meatloaf ham, chicken bacon drumstick alcatra shoulder strip steak.",
+                "images": 2
+              },
+              {
+                "id": "porterhouse-steak",
+                "title": "Porterhouse Steak",
+                "subtitle": "Ma, wow, look at that!",
+                "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+                "images": 4
+              }
+            ]
+          }
+        }
+      ],
+      "sourcePath": "page_components/RecipesPage",
+      "sourceFile": "page_components/RecipesPage/component.config.js",
+      "readmeFile": "page_components/RecipesPage/README.md",
+      "type": "component",
+      "context": {
+        "title": "Recipes",
+        "class": "uie-page uie-page--recipes",
+        "recipes": [
+          {
+            "id": "bacon-wrapped-chicken-breasts",
+            "title": "Bacon-wrapped Chicken Breasts",
+            "subtitle": "Because everything becomes better with bacon!",
+            "abstract": "Spicy jalapeno bacon ipsum dolor amet turducken doner shankle pancetta, pastrami bresaola fatback pig ball tip.",
+            "images": 4
+          },
+          {
+            "id": "beer-can-chicken",
+            "title": "Beer Can Chicken",
+            "subtitle": "With a castiron pan",
+            "abstract": "Alcatra cupim bresaola tenderloin. Ribeye turducken tongue jowl, brisket t-bone biltong cupim ancetta landjaeger shankle salami beef meatloaf buffalo.",
+            "images": 3
+          },
+          {
+            "id": "burgers",
+            "title": "Grilling burgers",
+            "subtitle": "Juicy beef, kissed by the flame!",
+            "abstract": "Venison andouille chicken boudin pancetta tenderloin salami rump cupim. Pork belly frankfurter short loin tenderloin burgdoggen venison.",
+            "images": 3
+          },
+          {
+            "id": "burnt-ends",
+            "title": "Brisket Burnt Ends",
+            "abstract": "Venison tenderloin fatback, jowl ball tip chuck ground round. Turducken venison bresaola, shankle strip steak buffalo doner biltong short loin.",
+            "images": 4
+          },
+          {
+            "id": "gyros",
+            "title": "Gyros",
+            "abstract": "Spare ribs meatball bacon, shankle ribeye porchetta frankfurter sausage biltong turkey pork chop leberkas alcatra pork tenderloin.",
+            "images": 3
+          },
+          {
+            "id": "nacho-salad",
+            "title": "Nacho Salad",
+            "subtitle": "Beware, it's hot!",
+            "abstract": "Pork loin pork meatloaf short loin bacon. Capicola bacon short ribs jowl. Pork corned beef brisket venison, filet mignon tongue ham leberkas chuck short ribs short loin ground round shankle.",
+            "images": 3
+          },
+          {
+            "id": "onion-moinkballs",
+            "title": "Onion Moinkballs",
+            "abstract": "Swine picanha bacon shank pork chop turducken tail tongue pork loin burgdoggen. Biltong pork belly meatloaf ham, chicken bacon drumstick alcatra shoulder strip steak.",
+            "images": 2
+          },
+          {
+            "id": "porterhouse-steak",
+            "title": "Porterhouse Steak",
+            "subtitle": "Ma, wow, look at that!",
+            "abstract": "Short ribs meatloaf biltong salami. Ribeye pig andouille tenderloin, kielbasa hamburger leberkas ham hock jowl spare ribs chuck pork loin venison kevin shoulder.",
+            "images": 4
+          }
+        ]
+      },
+      "dependentFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/variants/RecipesPage.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/RecipesPage/variants/RecipesPage.js"
+      ],
+      "properties": {
+        "<RecipesPage>": {
+          "recipes": {
+            "type": "Array",
+            "value": {
+              "type": "Shape",
+              "value": {
+                "id": {
+                  "type": "String",
+                  "required": false
+                },
+                "title": {
+                  "type": "String",
+                  "required": false
+                }
+              }
+            },
+            "required": false
+          }
+        }
+      },
+      "dependencyFiles": [
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/react/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/node_modules/prop-types/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Layout/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/Heading/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/components/RecipeItem/index.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/lib/types.js",
+        "/home/runner/work/uiengine-sample-react/uiengine-sample-react/page_components/pages.css"
+      ],
+      "dependencies": [
+        "Layout",
+        "Heading",
+        "RecipeItem"
+      ]
+    }
+  },
+  "navigation": {
+    "index": {
+      "childIds": [
+        "foundation",
+        "components",
+        "prototype"
+      ],
+      "id": "index",
+      "itemId": "index",
+      "path": "/",
+      "type": "documentation",
+      "title": "Home"
+    },
+    "components": {
+      "prevSiblingId": "foundation",
+      "nextSiblingId": "prototype",
+      "childIds": [
+        "components/elements",
+        "components/modules"
+      ],
+      "parentId": "index",
+      "id": "components",
+      "itemId": "components",
+      "isStructural": true,
+      "path": "/components/",
+      "type": "documentation",
+      "title": "Components"
+    },
+    "foundation": {
+      "nextSiblingId": "components",
+      "childIds": [
+        "foundation/colors",
+        "foundation/fonts",
+        "foundation/icons",
+        "foundation/spaces"
+      ],
+      "parentId": "index",
+      "id": "foundation",
+      "itemId": "foundation",
+      "isStructural": true,
+      "path": "/foundation/",
+      "type": "documentation",
+      "title": "Foundation"
+    },
+    "prototype": {
+      "prevSiblingId": "components",
+      "childIds": [
+        "prototype/HomePage",
+        "prototype/RecipesPage",
+        "prototype/RecipePage",
+        "prototype/AboutPage"
+      ],
+      "parentId": "index",
+      "id": "prototype",
+      "itemId": "prototype",
+      "isStructural": true,
+      "path": "/prototype/",
+      "type": "documentation",
+      "title": "Prototype"
+    },
+    "prototype/HomePage": {
+      "nextSiblingId": "prototype/RecipesPage",
+      "parentId": "prototype",
+      "id": "prototype/HomePage",
+      "itemId": "HomePage",
+      "path": "/prototype/HomePage/",
+      "type": "component",
+      "title": "Home",
+      "keywords": [
+        null
+      ]
+    },
+    "prototype/RecipesPage": {
+      "prevSiblingId": "prototype/HomePage",
+      "nextSiblingId": "prototype/RecipePage",
+      "parentId": "prototype",
+      "id": "prototype/RecipesPage",
+      "itemId": "RecipesPage",
+      "path": "/prototype/RecipesPage/",
+      "type": "component",
+      "title": "Recipes",
+      "keywords": [
+        null
+      ]
+    },
+    "prototype/RecipePage": {
+      "prevSiblingId": "prototype/RecipesPage",
+      "nextSiblingId": "prototype/AboutPage",
+      "parentId": "prototype",
+      "id": "prototype/RecipePage",
+      "itemId": "RecipePage",
+      "path": "/prototype/RecipePage/",
+      "type": "component",
+      "title": "Recipe",
+      "keywords": [
+        null
+      ]
+    },
+    "prototype/AboutPage": {
+      "prevSiblingId": "prototype/RecipePage",
+      "parentId": "prototype",
+      "id": "prototype/AboutPage",
+      "itemId": "AboutPage",
+      "path": "/prototype/AboutPage/",
+      "type": "component",
+      "title": "About",
+      "keywords": [
+        null
+      ]
+    },
+    "components/elements": {
+      "nextSiblingId": "components/modules",
+      "childIds": [
+        "components/elements/Heading",
+        "components/elements/Icon",
+        "components/elements/Tag"
+      ],
+      "parentId": "components",
+      "id": "components/elements",
+      "itemId": "components/elements",
+      "path": "/components/elements/",
+      "type": "documentation",
+      "title": "Elements"
+    },
+    "components/elements/Heading": {
+      "nextSiblingId": "components/elements/Icon",
+      "parentId": "components/elements",
+      "id": "components/elements/Heading",
+      "itemId": "Heading",
+      "path": "/components/elements/Heading/",
+      "type": "component",
+      "title": "Heading",
+      "keywords": [
+        null
+      ]
+    },
+    "components/elements/Icon": {
+      "prevSiblingId": "components/elements/Heading",
+      "nextSiblingId": "components/elements/Tag",
+      "parentId": "components/elements",
+      "id": "components/elements/Icon",
+      "itemId": "Icon",
+      "path": "/components/elements/Icon/",
+      "type": "component",
+      "title": "Icon",
+      "keywords": [
+        null
+      ]
+    },
+    "components/elements/Tag": {
+      "prevSiblingId": "components/elements/Icon",
+      "parentId": "components/elements",
+      "id": "components/elements/Tag",
+      "itemId": "Tag",
+      "path": "/components/elements/Tag/",
+      "type": "component",
+      "title": "Tag",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules": {
+      "prevSiblingId": "components/elements",
+      "childIds": [
+        "components/modules/Panel",
+        "components/modules/RecipeItem",
+        "components/modules/Header",
+        "components/modules/Navbar",
+        "components/modules/Footer",
+        "components/modules/Socialbar",
+        "components/modules/Layout"
+      ],
+      "parentId": "components",
+      "id": "components/modules",
+      "itemId": "components/modules",
+      "isStructural": true,
+      "path": "/components/modules/",
+      "type": "documentation",
+      "title": "Modules"
+    },
+    "components/modules/Panel": {
+      "nextSiblingId": "components/modules/RecipeItem",
+      "parentId": "components/modules",
+      "id": "components/modules/Panel",
+      "itemId": "Panel",
+      "path": "/components/modules/Panel/",
+      "type": "component",
+      "title": "Panel",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules/RecipeItem": {
+      "prevSiblingId": "components/modules/Panel",
+      "nextSiblingId": "components/modules/Header",
+      "parentId": "components/modules",
+      "id": "components/modules/RecipeItem",
+      "itemId": "RecipeItem",
+      "path": "/components/modules/RecipeItem/",
+      "type": "component",
+      "title": "RecipeItem",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules/Header": {
+      "prevSiblingId": "components/modules/RecipeItem",
+      "nextSiblingId": "components/modules/Navbar",
+      "parentId": "components/modules",
+      "id": "components/modules/Header",
+      "itemId": "Header",
+      "path": "/components/modules/Header/",
+      "type": "component",
+      "title": "Header",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules/Navbar": {
+      "prevSiblingId": "components/modules/Header",
+      "nextSiblingId": "components/modules/Footer",
+      "parentId": "components/modules",
+      "id": "components/modules/Navbar",
+      "itemId": "Navbar",
+      "path": "/components/modules/Navbar/",
+      "type": "component",
+      "title": "Navbar",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules/Footer": {
+      "prevSiblingId": "components/modules/Navbar",
+      "nextSiblingId": "components/modules/Socialbar",
+      "parentId": "components/modules",
+      "id": "components/modules/Footer",
+      "itemId": "Footer",
+      "path": "/components/modules/Footer/",
+      "type": "component",
+      "title": "Footer",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules/Socialbar": {
+      "prevSiblingId": "components/modules/Footer",
+      "nextSiblingId": "components/modules/Layout",
+      "parentId": "components/modules",
+      "id": "components/modules/Socialbar",
+      "itemId": "Socialbar",
+      "path": "/components/modules/Socialbar/",
+      "type": "component",
+      "title": "Socialbar",
+      "keywords": [
+        null
+      ]
+    },
+    "components/modules/Layout": {
+      "prevSiblingId": "components/modules/Socialbar",
+      "parentId": "components/modules",
+      "id": "components/modules/Layout",
+      "itemId": "Layout",
+      "path": "/components/modules/Layout/",
+      "type": "component",
+      "title": "Layout",
+      "keywords": [
+        null
+      ]
+    },
+    "foundation/colors": {
+      "nextSiblingId": "foundation/fonts",
+      "parentId": "foundation",
+      "id": "foundation/colors",
+      "itemId": "foundation/colors",
+      "path": "/foundation/colors/",
+      "type": "tokens",
+      "title": "Colors"
+    },
+    "foundation/fonts": {
+      "prevSiblingId": "foundation/colors",
+      "nextSiblingId": "foundation/icons",
+      "parentId": "foundation",
+      "id": "foundation/fonts",
+      "itemId": "foundation/fonts",
+      "path": "/foundation/fonts/",
+      "type": "tokens",
+      "title": "Fonts"
+    },
+    "foundation/icons": {
+      "prevSiblingId": "foundation/fonts",
+      "nextSiblingId": "foundation/spaces",
+      "parentId": "foundation",
+      "id": "foundation/icons",
+      "itemId": "foundation/icons",
+      "path": "/foundation/icons/",
+      "type": "tokens",
+      "title": "Icons"
+    },
+    "foundation/spaces": {
+      "prevSiblingId": "foundation/icons",
+      "parentId": "foundation",
+      "id": "foundation/spaces",
+      "itemId": "foundation/spaces",
+      "path": "/foundation/spaces/",
+      "type": "tokens",
+      "title": "Spaces"
+    }
+  }
+}
