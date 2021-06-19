@@ -4,15 +4,16 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [12]
-
     steps:
     - name: Checkout
       uses: actions/checkout@v1
@@ -30,14 +31,15 @@ jobs:
         cp deploy/gh-pages-spa.js out/gh-pages-spa.js
         sed '7i\'$'\n''<script src="/gh-pages-spa.js"></script>'$'\n' out/design-system/index.html > out/design-system/index-modified.html
         mv out/design-system/index{-modified,}.html
-        # https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
-        touch out/.nojekyll
-        # https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site
-        echo uiengine-sample-react.uix.space > out/CNAME
       env:
         CI: true
-    - name: GitHub Pages Deploy
-      uses: maxheld83/ghpages@v0.2.1
-      env:
-        BUILD_DIR: out/
-        GH_PAT: ${{ secrets.GH_PAT }}
+    - name: Deploy
+      if: success() && github.ref == 'refs/heads/master'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        publish_dir: ./out
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        cname: uiengine-sample-react.uix.space
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+
